@@ -1,31 +1,60 @@
 import React from 'react'
 
-const Header = (props) => (
-    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-            <span className="icon fa-diamond"></span>
-        </div>
-        <div className="content">
-            <div className="inner">
-                <h1>Dimension</h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+const Header = props => (
+  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+    {/*
+      <div className="logo">
+      <span className="icon fa-diamond"></span>
+    </div> */}
+    <nav>
+      <ul>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('Dentures') 
+}}>Dentures</a></li>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('Partials')
+ }}>FRS&nbsp;Partials</a></li>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('CrownAndBridge') 
+}}>Crown&nbsp;&&nbsp;Bridge</a></li>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('Cast')
+ }}>Cast&nbsp;Metal</a></li>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('Other')
+ }}>Other&nbsp;Products</a></li>
+      </ul>
+    </nav>
+    <div className="content">
+      <div className="inner">
+        <h6>Claudio Dental Lab</h6>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="javascript:;" onClick={() => { 
+props.onOpenArticle('Digital')
+ }}>Digital</a></li>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('About') 
+}}>About</a></li>
+        <li><a href="javascript:;" onClick={() => {
+ props.onOpenArticle('Contact')
+ }}>Contact</a></li>
+        <li><a href="javascript:;" onClick={() => { 
+props.onOpenArticle('ML')
+ }}>Mailing&nbsp;Labels</a></li>
+        <li><a href="javascript:;" onClick={() => { 
+props.onOpenArticle('RX')
+ }}>RX&nbsp;Forms</a></li>
+      </ul>
+    </nav>
+  </header>
 )
 
 Header.propTypes = {
-    onOpenArticle: React.PropTypes.func,
-    timeout: React.PropTypes.bool
+  onOpenArticle: React.PropTypes.func,
+  timeout: React.PropTypes.bool,
 }
 
 export default Header
