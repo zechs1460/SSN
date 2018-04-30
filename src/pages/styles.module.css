@@ -1,0 +1,13 @@
+.seperatePage {
+	background-color: rgba(255,255,255,0.65);	/*opaque white bg */
+	width: 66.5rem;	// Width of the article / 63.5rem is min amount for 4 items on one line / 66.5rem for extended 4 items
+	max-width: 100%;
+	border-radius: _size(border-radius);
+	color:#1f497d; /*Navy Blue*/
+	font-size: 1.2rem;
+	padding: 2rem;
+	border-radius: 15px;
+}
+strong {
+	color:#1f497d; /*Navy Blue*/
+}
