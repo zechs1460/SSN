@@ -1,13 +1,26 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
-const Footer = (props) => (
-    <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
-        <p className="copyright">&copy; Gatsby Starter - Dimension. Design: <a href="https://html5up.net">HTML5 UP</a>. Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a></p>
-    </footer>
+const Footer = props => (
+  <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
+    <div>
+      <p className="copyright">
+        <span className="item">&copy; Copyright Claudio Dental Lab</span>
+        &nbsp;
+        &#11044;
+        &nbsp;
+        <Link className="item" to={`/Privacy`}>Privacy Policy</Link>
+        &nbsp;
+        &#11044;
+        &nbsp;
+        <Link className="item" to={`/Terms`}>Terms of Use</Link>
+      </p>
+    </div>
+  </footer>
 )
 
 Footer.propTypes = {
-    timeout: React.PropTypes.bool
+  timeout: React.PropTypes.bool,
 }
 
 export default Footer
