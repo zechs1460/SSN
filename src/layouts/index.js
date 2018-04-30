@@ -71,7 +71,6 @@ class Template extends React.Component {
         article: ''
       })
     }, 350)
-
   }
 
   render() {
