@@ -18,20 +18,6 @@ export default class Main extends React.Component {
           </p>
           <div className={styles.flexContainer}>
 
-            <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />
-              <div className={styles.clear}>
-                <p>
-                  <strong>Premium Denture: </strong>
-                  <ul>
-                    <li>familiar American and European molds with full-body anatomy</li>
-                    <li>broad posterior occlusal tables and excellent wear resistance</li>
-                    <li>natural characterization to make the denture lifelike</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-
           </div>
 
           {close}
