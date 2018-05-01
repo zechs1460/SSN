@@ -47,21 +47,6 @@ export default class Main extends React.Component {
               </div>
             </div>
 
-            <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imagedenture3.resolutions} />
-              <div className={styles.clear}>
-                <p>
-                  <strong>Economy Denture: </strong>
-                  <ul>
-                    <li>Transitional or standard dentures</li>
-                    <li>two layer acrylic teeth</li>
-                    <li>aesthetic and affordability shades</li>
-                    <li>Overnight services available*</li>
-                    <li>can provide Titanium Bars for implant cases</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
           </div>
 
           {close}
