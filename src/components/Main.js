@@ -63,11 +63,6 @@ export default class Main extends React.Component {
               </div>
             </div>
           </div>
-          <div className={styles.clear}>
-            <p>
-              Overnight rush services available. Please call to inquire.
-            </p>
-          </div>
 
           {close}
           </div>
