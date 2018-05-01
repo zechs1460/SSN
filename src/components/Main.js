@@ -38,7 +38,7 @@ export default class Main extends React.Component {
                   <ul>
                     <li>standard-anatomy, vacuum-fired, and good-wear resistant teeth</li>
                     <li>Package Includes a free trying and free shipping</li>
-                    <li>Lucitone ® 199 Acrylic</li>
+                    <li>Lucitone &#xAE; 199 Acrylic</li>
                     <li>Classic Teeth</li>
                     <li>Lincoln Dual Form V</li>
                   </ul>
@@ -68,12 +68,13 @@ export default class Main extends React.Component {
             </p>
           </div>
           <p>
-            We can inject with Lucitone ® 199, Nature-Cryl Pour and conventional
+            We can inject with Lucitone &#xAE; 199, Nature-Cryl Pour and conventional
             flask any case. We are constantly reviewing the proper protocol for limiting
-            cross-contamination in accordance with <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">infection control
-            guidelines</a> developed by the centers for Disease Control, American Dental
-            Association, and OSHA. We provide &quot;safe-t-bags&quot; to help prevent
-            cross-contamination of shipping boxes and packing materials.
+            cross-contamination in accordance with 
+            <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">
+            infection control guidelines</a> developed by the centers for Disease Control, 
+            American Dental Association, and OSHA. We provide &quot;safe-t-bags&quot; to 
+            help prevent cross-contamination of shipping boxes and packing materials.
           </p>
           <p>
             We send an invoice with every case.&nbsp; Statements are sent on the
@@ -93,6 +94,38 @@ export default class Main extends React.Component {
           </p>
           {close}
         </article>
+
+        <article id="Partials" className={`${this.props.article === 'Partials' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+        <h3 className="major">FRS&nbsp;Partials</h3>
+        <Img className={styles.leftImg} resolutions={this.props.imagePartial1.resolutions}/>
+        <Img className={styles.rightImg} resolutions={this.props.imagePartial2.resolutions}/>
+        <div className={styles.clear}>
+          <p>
+            The most important procedure is the preliminary or diagnostic cast. The cast must be surveyed and then designed for a removable partial denture. This preliminary survey and design will form a basis for restorative treatment of abutment teeth and will indicate to the technician certain procedures that may need to be completed before a final impression is made.
+          </p>
+        </div>
+
+        <Img className={styles.rightImg} resolutions={this.props.imagePartial3.resolutions}/>
+        <strong className={styles.paddingTop}>We have three packages: </strong>
+        <ul className={styles.paddingBottom}>
+          <li>Premium</li>
+          <li>Custom</li>
+          <li>Economy (transitional partials)</li>
+        </ul>
+
+        <Img className={styles.rightImg} resolutions={this.props.imagePartial4.resolutions}/>
+        <strong className={styles.paddingTop}>We have different choices for Partial Dentures: </strong>
+        <ul className={styles.paddingBottom}>
+          <li>Acrylic with wrought wire clasps</li>
+          <li>Flexible FRS </li>
+          <li>Cast Metal Vitallium 2000</li>
+          <li>Combo Crown &amp; Bridge </li>
+        </ul>
+        <Img className={styles.leftImg} resolutions={this.props.imagePartial5.resolutions}/>
+        <Img className={styles.rightImg} resolutions={this.props.imagePartial6.resolutions}/>
+        {close}
+      </article>
+
       </div>
     )
   }
