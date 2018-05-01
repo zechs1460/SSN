@@ -16,9 +16,6 @@ export default class Main extends React.Component {
           <p>
             <strong>We offer different package for dentures: </strong>
           </p>
-          <div className={styles.flexContainer}>
-
-          </div>
 
           {close}
           </div>
@@ -67,10 +64,6 @@ export default class Main extends React.Component {
             </p>
           </div>
 
-          <div className={styles.flexContainer}>
-
-            
-          </div>
 
             <p>
               <a href="https://www.dentsplysirona.com/en-us">DENTSPLY Prident</a> is an ISO 9001
