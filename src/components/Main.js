@@ -95,6 +95,21 @@ export default class Main extends React.Component {
               </div>
             </div>
 
+            <div className={styles.flexItems}>
+              <Img className={styles.leftImg} resolutions={this.props.imageCrownAndBridge4.resolutions}/>
+              <div className={styles.clear}>
+                <p>
+                  <strong>Zirconia Crowns</strong>
+                  <ul>
+                    <li>BruxZir, ULTRA, InCoris TZI</li>
+                    <li>In Vita A1 - D4 Shade</li>
+                    <li>Strength 1450 Mpa</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            
+          </div>
 
             <p>
               <a href="https://www.dentsplysirona.com/en-us">DENTSPLY Prident</a> is an ISO 9001
@@ -114,7 +129,7 @@ export default class Main extends React.Component {
                 <li>Cercon &#xAE; </li>
               </ul>
             </p>
-          </div>
+
           <Img className={styles.leftImg} resolutions={this.props.imageCrownAndBridge1.resolutions}/>
           <Img className={styles.rightImg} resolutions={this.props.imageCrownAndBridge3.resolutions}/>
 
