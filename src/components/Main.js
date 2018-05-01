@@ -17,7 +17,7 @@ export default class Main extends React.Component {
           </p>
           <div className={styles.flexContainer}>
             <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.data.imagedenture1.resolutions}/>
+              <Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions}/>
               <div className={styles.clear}>
                 <p>
                   <strong>Premium Denture: </strong>
