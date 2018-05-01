@@ -9,8 +9,8 @@ export default class Main extends React.Component {
     }}></div>
     return (
       <div id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
-        {/* -------------------------------------------------------------------------- */}
-        <article id="Dentures" className={`${this.props.article === 'Dentures' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+
+      <article id="Dentures" className={`${this.props.article === 'Dentures' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
         <div>  
         <h3 className="major">Dentures</h3>
           <p>
@@ -129,7 +129,7 @@ export default class Main extends React.Component {
           {close}
           </div>
         </article>
-        
+
       </div>
     )
   }
