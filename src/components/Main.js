@@ -69,45 +69,6 @@ export default class Main extends React.Component {
 
           <div className={styles.flexContainer}>
 
-            <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imageCrownAndBridge5.resolutions}/>
-              <div className={styles.clear}>
-                <p>
-                  <strong>Crown & Bridge</strong>
-                  <ul>
-                    <li>We accept digital files!</li>
-                    <li>All products finished under microscope</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imageCrownAndBridge2.resolutions}/>
-              <div className={styles.clear}>
-                <p>
-                  <strong>E.max Crowns</strong>
-                  <ul>
-                    <li>IPS e.max CAD Full-Contour</li>
-                    <li>CAD/CAM design and milling</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imageCrownAndBridge4.resolutions}/>
-              <div className={styles.clear}>
-                <p>
-                  <strong>Zirconia Crowns</strong>
-                  <ul>
-                    <li>BruxZir, ULTRA, InCoris TZI</li>
-                    <li>In Vita A1 - D4 Shade</li>
-                    <li>Strength 1450 Mpa</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
             
           </div>
 
