@@ -31,22 +31,6 @@ export default class Main extends React.Component {
               </div>
             </div>
 
-            <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imagedenture2.resolutions} />
-              <div className={styles.clear}>
-                <p>
-                  <strong>Custom Denture: </strong>
-                  <ul>
-                    <li>standard-anatomy, vacuum-fired, and good-wear resistant teeth</li>
-                    <li>Package Includes a free trying and free shipping</li>
-                    <li>Lucitone &#xAE; 199 Acrylic</li>
-                    <li>Classic Teeth</li>
-                    <li>Lincoln Dual Form V</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-
           </div>
 
           {close}
