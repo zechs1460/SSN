@@ -9,8 +9,8 @@ export default class Main extends React.Component {
     }}></div>
     return (
       <div id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
-
-      <article id="Dentures" className={`${this.props.article === 'Dentures' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+        {/* -------------------------------------------------------------------------- */}
+        <article id="Dentures" className={`${this.props.article === 'Dentures' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
         <div>  
         <h3 className="major">Dentures</h3>
           <p>
@@ -68,35 +68,11 @@ export default class Main extends React.Component {
               Overnight rush services available. Please call to inquire.
             </p>
           </div>
-          <p>
-            We can inject with Lucitone &#xAE; 199, Nature-Cryl Pour and conventional
-            flask any case. We are constantly reviewing the proper protocol for limiting
-            cross-contamination in accordance with
-            <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">
-              infection control guidelines</a> developed by the centers for Disease Control,
-            American Dental Association, and OSHA. We provide &quot;safe-t-bags&quot; to
-            help prevent cross-contamination of shipping boxes and packing materials.
-          </p>
-          <p>
-            We send an invoice with every case.&nbsp; Statements are sent on the
-            1st of the month.&nbsp; If you require a month ending differently, please
-            let us know. We can provide a 30-day billing cycle of your choice.&nbsp;
-            Initially, we must have a credit card on file. The first case will be charged
-            to your card.&nbsp; After the first case, you will be placed on a monthly
-            billing as long as we have the credit card on file.&nbsp; You may pay by
-            check or call to have your balance placed on your card.
-          </p>
-          <Img className={styles.rightImg} resolutions={this.props.imagedenture4.resolutions} />
-          <p>
-            Please let us know if other arrangements are needed.
-          </p>
-          <p>
-            Ground shipping is free. There is a $25.00 fee on all rush orders.
-          </p>
+
           {close}
           </div>
         </article>
-
+        {/* -------------------------------------------------------------------------- */}
         <article id="Partials" className={`${this.props.article === 'Partials' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
         <div>  
         <h3 className="major">FRS&nbsp;Partials</h3>
@@ -129,8 +105,8 @@ export default class Main extends React.Component {
           {close}
           </div>
         </article>
-
-      </div>
+        {/* -------------------------------------------------------------------------- */}
+       </div>
     )
   }
 }
