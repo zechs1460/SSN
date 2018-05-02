@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import Img from 'gatsby-image'
 import styles from './Main.module.css'
@@ -74,9 +75,9 @@ export default class Main extends React.Component {
 }
 
 Main.propTypes = {
-  route: React.PropTypes.object,
-  article: React.PropTypes.string,
-  articleTimeout: React.PropTypes.bool,
-  onCloseArticle: React.PropTypes.func,
-  timeout: React.PropTypes.bool,
+  route: PropTypes.object,
+  article: PropTypes.string,
+  articleTimeout: PropTypes.bool,
+  onCloseArticle: PropTypes.func,
+  timeout: PropTypes.bool,
 }

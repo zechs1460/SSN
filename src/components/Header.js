@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 
 const Header = props => (
@@ -30,8 +31,8 @@ const Header = props => (
 )
 
 Header.propTypes = {
-  onOpenArticle: React.PropTypes.func,
-  timeout: React.PropTypes.bool,
+  onOpenArticle: PropTypes.func,
+  timeout: PropTypes.bool,
 }
 
 export default Header

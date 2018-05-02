@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import Link from 'gatsby-link'
 
@@ -20,7 +21,7 @@ const Footer = props => (
 )
 
 Footer.propTypes = {
-  timeout: React.PropTypes.bool,
+  timeout: PropTypes.bool,
 }
 
 export default Footer
