@@ -264,10 +264,6 @@ export default class Main extends React.Component {
                 <Img className={styles.leftImg} resolutions={this.props.imageOther1.resolutions} />
                 <div className={styles.clear}>
                   <h4>Abutments</h4>
-                  <ul>
-                    <li>Patient-Specific abutments</li>
-                    <li>For perfect fitting, everytime</li>
-                  </ul>
                 </div>
               </div>
 
@@ -275,10 +271,6 @@ export default class Main extends React.Component {
                 <Img className={styles.leftImg} resolutions={this.props.imageOther2.resolutions} />
                 <div className={styles.clear}>
                   <h4>Nightguards</h4>
-                  <ul>
-                    <li>X</li>
-                    <li>X</li>
-                  </ul>
                 </div>
               </div>
 
@@ -286,11 +278,6 @@ export default class Main extends React.Component {
                 <Img className={styles.leftImg} resolutions={this.props.imageOther3.resolutions} />
                 <div className={styles.clear}>
                   <h4>Wax patterns</h4>
-                  <ul>
-                    <li>X</li>
-                    <li>X</li>
-                    <li>X</li>
-                  </ul>
                 </div>
               </div>
 
@@ -298,10 +285,6 @@ export default class Main extends React.Component {
                 <Img className={styles.leftImg} resolutions={this.props.imageOther4.resolutions} />
                 <div className={styles.clear}>
                   <h4>Study Models</h4>
-                  <ul>
-                    <li>X</li>
-                    <li>X</li>
-                  </ul>
                 </div>
               </div>
 
@@ -309,11 +292,6 @@ export default class Main extends React.Component {
                 <Img className={styles.leftImg} resolutions={this.props.imageOther5.resolutions} />
                 <div className={styles.clear}>
                   <h4>PFMs</h4>
-                  <ul>
-                    <li>X</li>
-                    <li>X</li>
-                    <li>X</li>
-                  </ul>
                 </div>
               </div>
 
@@ -506,15 +484,15 @@ export default class Main extends React.Component {
               </div>
               <ul className="actions">
                 <li><input type="submit" value="Send Message" className="special" /></li>
-                <li><input type="reset" value="Reset" /></li>
+                <li><input type="reset" value="Reset" className="special" /></li>
               </ul>
             </form>
 
             <ul className="icons">
               <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-              <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+              <li><a href="https://www.facebook.com/pages/Claudio-Dental-Laboratory/508003735999660" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
               <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-              <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+              <li><a href="https://github.com/zechs1460/ClaudioDentalLab" className="icon fa-github"><span className="label">GitHub</span></a></li>
             </ul>
 
           </div>
@@ -524,9 +502,9 @@ export default class Main extends React.Component {
         <article id="ML" className={`${this.props.article === 'ML' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <div>
 
-            <h3 className="major">Mailing Labels</h3>
+            <h3 className="major">Mailing Label</h3>
 
-            <p>Please click the image to print out an RX form. Fill out the RX form and send it with the case.</p>
+            <p>Please click the image to print out a Mailing Label.</p>
 
             <div onClick={() => window.print()}>
               <Img resolutions={this.props.imageML.resolutions} />
@@ -540,12 +518,28 @@ export default class Main extends React.Component {
         <article id="RX" className={`${this.props.article === 'RX' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <div>
 
-            <h3 className="major">RX Forms</h3>
+            <h3 className="major">RX Form</h3>
 
-            <p>Please click the image to print out an RX form. Fill out the RX form and send it with the case.</p>
+            <p>Please click the image to print out an RX form. Fill out the form and send it with the case.</p>
 
             <div onClick={() => window.print()}>
               <Img resolutions={this.props.imageRX.resolutions} />
+            </div>
+
+
+          </div>
+          {close}
+        </article>
+
+        <article id="Fixed" className={`${this.props.article === 'Fixed' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none'}}>
+          <div>
+
+            <h3 className="major">Fixed RX Form</h3>
+
+            <p>Please click the image to print out a Fixed RX form. Fill out the form and send it with the case.</p>
+
+            <div onClick={() => window.print()}>
+              <Img resolutions={this.props.imageFixed.resolutions} />
             </div>
 
 

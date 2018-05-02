@@ -20,13 +20,13 @@ class Template extends React.Component {
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({loading: ''});
+      this.setState({ loading: '' });
     }, 100);
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
@@ -115,6 +115,13 @@ class Template extends React.Component {
             imageCast2={this.props.data.imageCast2}
             imageCast3={this.props.data.imageCast3}
             imageCast4={this.props.data.imageCast4}
+            /*Others*/
+            imageOther1={this.props.data.imageOther1}
+            imageOther2={this.props.data.imageOther2}
+            imageOther3={this.props.data.imageOther3}
+            imageOther4={this.props.data.imageOther4}
+            imageOther5={this.props.data.imageOther5}
+            imageOther6={this.props.data.imageOther6}
             /*Digital*/
             imageDigital1={this.props.data.imageDigital1}
             imageDigital2={this.props.data.imageDigital2}
@@ -133,13 +140,8 @@ class Template extends React.Component {
             imageML={this.props.data.imageML}
             /*RX*/
             imageRX={this.props.data.imageRX}
-            /*Others*/
-            imageOther1={this.props.data.imageOther1}
-            imageOther2={this.props.data.imageOther2}
-            imageOther3={this.props.data.imageOther3}
-            imageOther4={this.props.data.imageOther4}
-            imageOther5={this.props.data.imageOther5}
-            imageOther6={this.props.data.imageOther6}
+            /*Fixed*/
+            imageFixed={this.props.data.imageFixed}
 
 
           />
@@ -152,20 +154,20 @@ class Template extends React.Component {
           <div style={{
             maxWidth: '1140px'
           }}>
-          {children()}
+            {children()}
+          </div>
         </div>
+      )
+    }
+
+    return (
+      <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
+        <Helmet><title>{siteTitle}</title><meta name="description" content={siteDescription} /></Helmet>
+        {content}
+        <div id="bg"></div>
       </div>
     )
   }
-
-  return (
-    <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
-      <Helmet><title>{siteTitle}</title><meta name="description" content={siteDescription} /></Helmet>
-      {content}
-      <div id="bg"></div>
-    </div>
-  )
-}
 }
 
 export default Template
@@ -339,18 +341,6 @@ query PageQuery {
     }
   }
 
-  imageML: imageSharp(id: { regex: "/ML.jpg/" }) {
-    resolutions(width: 550, height: 336) {
-      ...GatsbyImageSharpResolutions
-    }
-  }
-
-  imageRX: imageSharp(id: { regex: "/RX.jpg/" }) {
-    resolutions(width: 415, height: 650) {
-      ...GatsbyImageSharpResolutions
-    }
-  }
-
   imageOther1: imageSharp(id: { regex: "/Other1.png/" }) {
     resolutions(width: 180, height: 150) {
       ...GatsbyImageSharpResolutions
@@ -373,6 +363,25 @@ query PageQuery {
   }
   imageOther5: imageSharp(id: { regex: "/Other5.png/" }) {
     resolutions(width: 199, height: 150) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+
+  
+  imageML: imageSharp(id: { regex: "/ML.jpg/" }) {
+    resolutions(width: 550, height: 336) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+
+  imageRX: imageSharp(id: { regex: "/RX.jpg/" }) {
+    resolutions(width: 415, height: 650) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+
+  imageFixed: imageSharp(id: { regex: "/Fixed.jpg/" }) {
+    resolutions(width: 985, height: 746) {
       ...GatsbyImageSharpResolutions
     }
   }
