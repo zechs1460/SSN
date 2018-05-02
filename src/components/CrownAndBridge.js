@@ -62,15 +62,15 @@ export default class CrownAndBridge extends React.Component {
                 </p>
                 <p>
                     The Turn-around Time is less than 15 days for the following:
-
-                    <ul>
-                        <li>PFM</li>
-                        <li>Captek &#x2122; </li>
-                        <li>All-Ceramic &#xAE;</li>
-                        <li>Radica </li>
-                        <li>Cercon &#xAE; </li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>PFM</li>
+                    <li>Captek &#x2122; </li>
+                    <li>All-Ceramic &#xAE;</li>
+                    <li>Radica </li>
+                    <li>Cercon &#xAE; </li>
+                </ul>
+
 
                 {/*<Img className={styles.leftImg} resolutions={this.props.imageCrownAndBridge1.resolutions} />*/}
                 {/*<Img className={styles.rightImg} resolutions={this.props.imageCrownAndBridge3.resolutions} />*/}
