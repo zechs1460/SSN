@@ -19,7 +19,7 @@ export default class Main extends React.Component {
       <div id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
         
         <article id="Dentures" className={`${this.props.article === 'Dentures' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          {/*<Dentures />*/}
+          <Dentures />
           {close}
         </article>
         
