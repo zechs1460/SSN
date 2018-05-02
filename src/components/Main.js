@@ -24,7 +24,7 @@ export default class Main extends React.Component {
         </article>
         
         <article id="Partials" className={`${this.props.article === 'Partials' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          <Partials />
+          {/*<Partials />*/}
           {close}
         </article>
         
