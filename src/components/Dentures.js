@@ -11,8 +11,6 @@ export default class Dentures extends React.Component {
                     <strong>We offer different package for dentures: </strong>
                 </p>
 
-                <div className={styles.flexContainer}>
-
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />*/}
                         <div className={styles.clear}>
@@ -58,8 +56,6 @@ export default class Dentures extends React.Component {
                             </p>
                         </div>
                     </div>
-
-                </div>
 
                 <div className={styles.clear}>
                     <p>
