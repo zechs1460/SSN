@@ -14,9 +14,7 @@ import RX from './RX'
 
 export default class Main extends React.Component {
   render() {
-    const close = <div className="close" onClick={() => {
-      this.props.onCloseArticle()
-    }}></div>
+    const close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
     return (
       <div id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
         
