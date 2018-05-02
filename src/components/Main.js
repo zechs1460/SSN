@@ -74,6 +74,7 @@ export default class Main extends React.Component {
 }
 
 Main.propTypes = {
+  route: React.PropTypes.object,
   article: React.PropTypes.string,
   articleTimeout: React.PropTypes.bool,
   onCloseArticle: React.PropTypes.func,
