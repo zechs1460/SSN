@@ -11,8 +11,12 @@ export default class Partials extends React.Component {
                 {/*<Img className={styles.rightImg} resolutions={this.props.imagePartial2.resolutions} />*/}
                 <div className={styles.clear}>
                     <p>
-                        The most important procedure is the preliminary or diagnostic cast. The cast must be surveyed and then designed for a removable partial denture. This preliminary survey and design will form a basis for restorative treatment of abutment teeth and will indicate to the technician certain procedures that may need to be completed before a final impression is made.
-              </p>
+                        The most important procedure is the preliminary or diagnostic cast. 
+                        The cast must be surveyed and then designed for a removable partial denture. 
+                        This preliminary survey and design will form a basis for restorative treatment 
+                        of abutment teeth and will indicate to the technician certain procedures that 
+                        may need to be completed before a final impression is made.
+                    </p>
                 </div>
 
                 {/*<Img className={styles.rightImg} resolutions={this.props.imagePartial3.resolutions} />*/}
