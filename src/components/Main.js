@@ -2,16 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react'
 import Img from 'gatsby-image'
 import styles from './Main.module.css'
-import Dentures from './Dentures'
-import Partials from './Partials'
-import CrownAndBridge from './CrownAndBridge'
-import Cast from './Cast'
-import Other from './Other'
-import Digital from './Digital'
-import About from './About'
-import Contact from './Contact'
-import ML from './ML'
-import RX from './RX'
 
 export default class Main extends React.Component {
   render() {
@@ -187,10 +177,17 @@ export default class Main extends React.Component {
                 </div>
               </div>
 
+              <div className={styles.flexItems}>
+              <Img className={styles.leftImg} resolutions={this.props.imageOther5.resolutions} />
+              <div className={styles.clear}>
+                <h4>PFMs</h4>
+              </div>
+            </div>
+
             </div>
 
             <p>
-              <a href="https://www.dentsplysirona.com/en-us">DENTSPLY Prident</a> is an ISO 9001
+              <a href="https://www.dentsplysirona.com/en-us">DENTSPLY Prident </a> is an ISO 9001
               certified laboratory and a wholly owned subsidiary of DENTSPLY International,
               Inc. DENTSPLY Prident guarantees that the materials used in the finished
               medical device produced at DENTSPLY Prident are cleared by the FDA and are
@@ -285,13 +282,6 @@ export default class Main extends React.Component {
                 <Img className={styles.leftImg} resolutions={this.props.imageOther4.resolutions} />
                 <div className={styles.clear}>
                   <h4>Study Models</h4>
-                </div>
-              </div>
-
-              <div className={styles.flexItems}>
-                <Img className={styles.leftImg} resolutions={this.props.imageOther5.resolutions} />
-                <div className={styles.clear}>
-                  <h4>PFMs</h4>
                 </div>
               </div>
 
