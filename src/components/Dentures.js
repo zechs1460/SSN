@@ -13,19 +13,16 @@ export default class Dentures extends React.Component {
 
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
                                 <strong>Premium Denture: </strong>
                                 <ul>
                                     <li>familiar American and European molds with full-body anatomy</li>
                                     <li>broad posterior occlusal tables and excellent wear resistance</li>
                                     <li>natural characterization to make the denture lifelike</li>
                                 </ul>
-                            </p>
                         </div>
 
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture2.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
                                 <strong>Custom Denture: </strong>
                                 <ul>
                                     <li>standard-anatomy, vacuum-fired, and good-wear resistant teeth</li>
@@ -34,12 +31,10 @@ export default class Dentures extends React.Component {
                                     <li>Classic Teeth</li>
                                     <li>Lincoln Dual Form V</li>
                                 </ul>
-                            </p>
                         </div>
 
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture3.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
                                 <strong>Economy Denture: </strong>
                                 <ul>
                                     <li>Transitional or standard dentures</li>
@@ -48,7 +43,6 @@ export default class Dentures extends React.Component {
                                     <li>Overnight services available*</li>
                                     <li>can provide Titanium Bars for implant cases</li>
                                 </ul>
-                            </p>
                         </div>
 
                 <div className={styles.clear}>
@@ -60,7 +54,7 @@ export default class Dentures extends React.Component {
                     We can inject with Lucitone &#xAE; 199, Nature-Cryl Pour and conventional
                     flask any case. We are constantly reviewing the proper protocol for limiting
                     cross-contamination in accordance with
-                    <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">infection control guidelines</a>
+                    <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">infection control guidelines </a>
                     developed by the centers for Disease Control, American Dental
                     Association, and OSHA. We provide &quot;safe-t-bags&quot; to help prevent
                     cross-contamination of shipping boxes and packing materials.
