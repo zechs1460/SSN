@@ -13,7 +13,7 @@ export default class Dentures extends React.Component {
 
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />*/}
                         <div className={styles.clear}>
-                                <strong>Premium Denture: </strong>
+                                <h4>Premium Denture: </h4>
                                 <ul>
                                     <li>familiar American and European molds with full-body anatomy</li>
                                     <li>broad posterior occlusal tables and excellent wear resistance</li>
@@ -23,7 +23,7 @@ export default class Dentures extends React.Component {
 
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture2.resolutions} />*/}
                         <div className={styles.clear}>
-                                <strong>Custom Denture: </strong>
+                                <h4>Custom Denture: </h4>
                                 <ul>
                                     <li>standard-anatomy, vacuum-fired, and good-wear resistant teeth</li>
                                     <li>Package Includes a free trying and free shipping</li>
@@ -35,7 +35,7 @@ export default class Dentures extends React.Component {
 
                         {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture3.resolutions} />*/}
                         <div className={styles.clear}>
-                                <strong>Economy Denture: </strong>
+                                <h4>Economy Denture: </h4>
                                 <ul>
                                     <li>Transitional or standard dentures</li>
                                     <li>two layer acrylic teeth</li>
