@@ -11,39 +11,39 @@ export default class Dentures extends React.Component {
                     <strong>We offer different package for dentures: </strong>
                 </p>
 
-                        {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />*/}
-                        <div className={styles.clear}>
-                                <h4>Premium Denture: </h4>
-                                <ul>
-                                    <li>familiar American and European molds with full-body anatomy</li>
-                                    <li>broad posterior occlusal tables and excellent wear resistance</li>
-                                    <li>natural characterization to make the denture lifelike</li>
-                                </ul>
-                        </div>
+                {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />*/}
+                <div className={styles.clear}>
+                    <h4>Premium Denture: </h4>
+                    <ul>
+                        <li>familiar American and European molds with full-body anatomy</li>
+                        <li>broad posterior occlusal tables and excellent wear resistance</li>
+                        <li>natural characterization to make the denture lifelike</li>
+                    </ul>
+                </div>
 
-                        {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture2.resolutions} />*/}
-                        <div className={styles.clear}>
-                                <h4>Custom Denture: </h4>
-                                <ul>
-                                    <li>standard-anatomy, vacuum-fired, and good-wear resistant teeth</li>
-                                    <li>Package Includes a free trying and free shipping</li>
-                                    <li>Lucitone &#xAE; 199 Acrylic</li>
-                                    <li>Classic Teeth</li>
-                                    <li>Lincoln Dual Form V</li>
-                                </ul>
-                        </div>
+                {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture2.resolutions} />*/}
+                <div className={styles.clear}>
+                    <h4>Custom Denture: </h4>
+                    <ul>
+                        <li>standard-anatomy, vacuum-fired, and good-wear resistant teeth</li>
+                        <li>Package Includes a free trying and free shipping</li>
+                        <li>Lucitone &#xAE; 199 Acrylic</li>
+                        <li>Classic Teeth</li>
+                        <li>Lincoln Dual Form V</li>
+                    </ul>
+                </div>
 
-                        {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture3.resolutions} />*/}
-                        <div className={styles.clear}>
-                                <h4>Economy Denture: </h4>
-                                <ul>
-                                    <li>Transitional or standard dentures</li>
-                                    <li>two layer acrylic teeth</li>
-                                    <li>aesthetic and affordability shades</li>
-                                    <li>Overnight services available*</li>
-                                    <li>can provide Titanium Bars for implant cases</li>
-                                </ul>
-                        </div>
+                {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture3.resolutions} />*/}
+                <div className={styles.clear}>
+                    <h4>Economy Denture: </h4>
+                    <ul>
+                        <li>Transitional or standard dentures</li>
+                        <li>two layer acrylic teeth</li>
+                        <li>aesthetic and affordability shades</li>
+                        <li>Overnight services available*</li>
+                        <li>can provide Titanium Bars for implant cases</li>
+                    </ul>
+                </div>
 
                 <div className={styles.clear}>
                     <p>
@@ -68,7 +68,7 @@ export default class Dentures extends React.Component {
                     billing as long as we have the credit card on file.&nbsp; You may pay by
                     check or call to have your balance placed on your card.
                 </p>
-                    {/*<Img className={styles.rightImg} resolutions={this.props.imagedenture4.resolutions} />*/}
+                {/*<Img className={styles.rightImg} resolutions={this.props.imagedenture4.resolutions} />*/}
                 <p>
                     Please let us know if other arrangements are needed.
                 </p>
@@ -76,6 +76,6 @@ export default class Dentures extends React.Component {
                     Ground shipping is free. There is a $25.00 fee on all rush orders.
                 </p>
             </div>
-        ) 
+        )
     }
 }

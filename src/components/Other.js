@@ -13,67 +13,57 @@ export default class Other extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageOther1.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
-                                <strong>Abutments</strong>
-                                <ul>
-                                    <li>Patient-Specific abutments</li>
-                                    <li>For perfect fitting, everytime</li>
-                                </ul>
-                            </p>
+                            <h4>Abutments</h4>
+                            <ul>
+                                <li>Patient-Specific abutments</li>
+                                <li>For perfect fitting, everytime</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageOther2.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
-                                <strong>Nightguards</strong>
-                                <ul>
-                                    <li>X</li>
-                                    <li>X</li>
-                                </ul>
-                            </p>
+                            <h4>Nightguards</h4>
+                            <ul>
+                                <li>X</li>
+                                <li>X</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageOther3.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
-                                <strong>Wax patterns</strong>
-                                <ul>
-                                    <li>X</li>
-                                    <li>X</li>
-                                    <li>X</li>
-                                </ul>
-                            </p>
+                            <h4>Wax patterns</h4>
+                            <ul>
+                                <li>X</li>
+                                <li>X</li>
+                                <li>X</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageOther4.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
-                                <strong>Study Models</strong>
-                                <ul>
-                                    <li>X</li>
-                                    <li>X</li>
-                                </ul>
-                            </p>
+                            <h4>Study Models</h4>
+                            <ul>
+                                <li>X</li>
+                                <li>X</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageOther5.resolutions} />*/}
                         <div className={styles.clear}>
-                            <p>
-                                <strong>PFMs</strong>
-                                <ul>
-                                    <li>X</li>
-                                    <li>X</li>
-                                    <li>X</li>
-                                </ul>
-                            </p>
+                            <h4>PFMs</h4>
+                            <ul>
+                                <li>X</li>
+                                <li>X</li>
+                                <li>X</li>
+                            </ul>
                         </div>
                     </div>
 

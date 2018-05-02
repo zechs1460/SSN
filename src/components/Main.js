@@ -29,7 +29,7 @@ export default class Main extends React.Component {
         </article>
         
         <article id="CrownAndBridge" className={`${this.props.article === 'CrownAndBridge' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          {/*<CrownAndBridge />*/}
+          <CrownAndBridge />
           {close}
         </article>
         
@@ -39,7 +39,7 @@ export default class Main extends React.Component {
         </article>
         
         <article id="Other" className={`${this.props.article === 'Other' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          {/*<Other />*/}
+          <Other />
           {close}
         </article>
         

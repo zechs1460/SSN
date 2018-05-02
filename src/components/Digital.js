@@ -19,7 +19,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital1.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>Digital Scanning</strong>
+                            <h4>Digital Scanning</h4>
                             <ul>
                                 <li>Precise and efficient scans make your ending products accurate</li>
                             </ul>
@@ -29,7 +29,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital2.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>Natural Esthetics</strong>
+                            <h4>Natural Esthetics</h4>
                             <ul>
                                 <li>Beautiful and Natural look</li>
                                 <li>Designs based off surrounding dentition</li>
@@ -40,7 +40,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital3.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>Virtual Try-In</strong>
+                            <h4>Virtual Try-In</h4>
                             <ul>
                                 <li>3D-generated Patient Pictures allows facial features to be taken into account</li>
                             </ul>
@@ -50,7 +50,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital4.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>Virtual Articulation</strong>
+                            <h4>Virtual Articulation</h4>
                             <ul>
                                 <li>Virtual Articulation allows us to easily determine contact surfaces</li>
                             </ul>
@@ -60,7 +60,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital5.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>Inlay/Onlay and Veneers</strong>
+                            <h4>Inlay/Onlay and Veneers</h4>
                             <ul>
                                 <li> Anything you need, we can make!</li>
                             </ul>
@@ -70,7 +70,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital6.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>Crown and Bridge</strong>
+                            <h4>Crown and Bridge</h4>
                             <ul>
                                 <li>Full Contour or copings</li>
                                 <li>IPS e.max, inCoris TZI/ZI (BruxZir), Lava, VITABLOCS, and many more!</li>
@@ -81,7 +81,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital7.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>In-House Milling</strong>
+                            <h4>In-House Milling</h4>
                             <ul>
                                 <li>We mill it all right here so you get your case back ASAP!</li>
                             </ul>
@@ -91,7 +91,7 @@ export default class Digital extends React.Component {
                     <div className={styles.flexItems}>
                         {/*<Img className={styles.leftImg} resolutions={this.props.imageDigital8.resolutions} />*/}
                         <div className={styles.clear}>
-                            <strong>CEREC Connect</strong>
+                            <h4>CEREC Connect</h4>
                             <ul>
                                 <li>Finally go model free and send us digital scans for the best results!</li>
                             </ul>
