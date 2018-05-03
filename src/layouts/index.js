@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/scss/main.scss'
 import Helmet from 'react-helmet'
-
+import Img from 'gatsby-image'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
@@ -92,6 +92,8 @@ class Template extends React.Component {
             articleTimeout={this.state.articleTimeout}
             article={this.state.article}
             onCloseArticle={this.handleCloseArticle}
+            /*background*/
+            background={this.props.data.background}
             /*Dentures*/
             imagedenture1={this.props.data.imagedenture1}
             imagedenture2={this.props.data.imagedenture2}
@@ -146,6 +148,17 @@ class Template extends React.Component {
 
           />
           <Footer timeout={this.state.timeout} />
+
+          <Img style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: -1
+          }} 
+          sizes={this.props.data.background.sizes} />
+  
         </div>
       )
     } else {
@@ -180,6 +193,12 @@ query PageQuery {
       description
     }
   }
+  background: imageSharp(id: { regex: "/bg.jpg/" }) {
+    sizes(maxWidth: 1920) {
+      ...GatsbyImageSharpSizes
+    }
+  }
+
   imagedenture1: imageSharp(id: { regex: "/denture1.png/" }) {
     resolutions(width: 223, height: 150) {
       ...GatsbyImageSharpResolutions
@@ -367,7 +386,6 @@ query PageQuery {
     }
   }
 
-  
   imageML: imageSharp(id: { regex: "/ML.jpg/" }) {
     resolutions(width: 550, height: 336) {
       ...GatsbyImageSharpResolutions
@@ -385,5 +403,6 @@ query PageQuery {
       ...GatsbyImageSharpResolutions
     }
   }
+
 }
 `

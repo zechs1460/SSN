@@ -178,11 +178,11 @@ export default class Main extends React.Component {
               </div>
 
               <div className={styles.flexItems}>
-              <Img className={styles.leftImg} resolutions={this.props.imageOther5.resolutions} />
-              <div className={styles.clear}>
-                <h4>PFMs</h4>
+                <Img className={styles.leftImg} resolutions={this.props.imageOther5.resolutions} />
+                <div className={styles.clear}>
+                  <h4>PFMs</h4>
+                </div>
               </div>
-            </div>
 
             </div>
 
@@ -521,7 +521,7 @@ export default class Main extends React.Component {
           {close}
         </article>
 
-        <article id="Fixed" className={`${this.props.article === 'Fixed' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none'}}>
+        <article id="Fixed" className={`${this.props.article === 'Fixed' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <div>
 
             <h3 className="major">Fixed RX Form</h3>
@@ -536,7 +536,6 @@ export default class Main extends React.Component {
           </div>
           {close}
         </article>
-
       </div>
     )
   }
