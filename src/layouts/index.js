@@ -194,7 +194,7 @@ query PageQuery {
     }
   }
   background: imageSharp(id: { regex: "/bg.jpg/" }) {
-    sizes(maxWidth: 1920) {
+    sizes(maxWidth: 1920, quality: 100) {
       ...GatsbyImageSharpSizes
     }
   }
