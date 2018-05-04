@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react'
 import Img from 'gatsby-image'
 import styles from './Main.module.css'
+import Dentures from './Dentures'
 
 export default class Main extends React.Component {
   render() {

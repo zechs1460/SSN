@@ -144,8 +144,6 @@ class Template extends React.Component {
             imageRX={this.props.data.imageRX}
             /*Fixed*/
             imageFixed={this.props.data.imageFixed}
-
-
           />
           <Footer timeout={this.state.timeout} />
 
