@@ -1,2 +1,5 @@
 User-agent: *
-Disallow:
+
+Allow: /
+#Sitemap Reference
+Sitemap:http://www.claudiodentallab.com/sitemap.xml

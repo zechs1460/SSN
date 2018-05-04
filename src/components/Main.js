@@ -451,6 +451,8 @@ export default class Main extends React.Component {
                 Tel: (912) 654-1001 &nbsp;&nbsp;&nbsp;&nbsp;
                 Fax: (912) 654-1011
             <br />
+                Email: claudiodentallab@outlook.com
+            <br />
                 13918 GA Hwy-169, Glennville, GA 30427
             </strong>
             </p>
