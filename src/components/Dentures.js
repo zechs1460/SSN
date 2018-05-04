@@ -14,7 +14,7 @@ export default class Dentures extends React.Component {
                 <div className={styles.flexContainer}>
 
                     <div className={styles.flexItems}>
-                        {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture1.resolutions} />*/}
+                        <Img className={styles.leftImg} resolutions={this.props.imagedenture1} />
                         <div className={styles.clear}>
                             <h4>Premium Denture: </h4>
                             <ul>
@@ -26,7 +26,7 @@ export default class Dentures extends React.Component {
                     </div>
 
                     <div className={styles.flexItems}>
-                        {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture2.resolutions} />*/}
+                        <Img className={styles.leftImg} resolutions={this.props.imagedenture2} />
                         <div className={styles.clear}>
                             <h4>Custom Denture: </h4>
                             <ul>
@@ -40,7 +40,7 @@ export default class Dentures extends React.Component {
                     </div>
 
                     <div className={styles.flexItems}>
-                        {/*<Img className={styles.leftImg} resolutions={this.props.imagedenture3.resolutions} />*/}
+                        <Img className={styles.leftImg} resolutions={this.props.imagedenture3} />
                         <div className={styles.clear}>
                             <h4>Economy Denture: </h4>
                             <ul>
@@ -57,17 +57,17 @@ export default class Dentures extends React.Component {
                 <div className={styles.clear}>
                     <p>
                         Overnight rush services available. Please call to inquire.
-                    </p>
+            </p>
                 </div>
                 <p>
                     We can inject with Lucitone &#xAE; 199, Nature-Cryl Pour and conventional
                     flask any case. We are constantly reviewing the proper protocol for limiting
                     cross-contamination in accordance with
-                    <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">infection control guidelines </a>
+            <a href="http://www.cdc.gov/hai/prevent/prevent_pubs.html">infection control guidelines </a>
                     developed by the centers for Disease Control, American Dental
                     Association, and OSHA. We provide &quot;safe-t-bags&quot; to help prevent
                     cross-contamination of shipping boxes and packing materials.
-                </p>
+        </p>
                 <p>
                     We send an invoice with every case.&nbsp; Statements are sent on the
                     1st of the month.&nbsp; If you require a month ending differently, please
@@ -76,15 +76,46 @@ export default class Dentures extends React.Component {
                     to your card.&nbsp; After the first case, you will be placed on a monthly
                     billing as long as we have the credit card on file.&nbsp; You may pay by
                     check or call to have your balance placed on your card.
-                </p>
-                {/*<Img className={styles.rightImg} resolutions={this.props.imagedenture4.resolutions} />*/}
+        </p>
+                <Img className={styles.rightImg} resolutions={this.props.imagedenture4} />
                 <p>
                     Please let us know if other arrangements are needed.
-                </p>
+        </p>
                 <p>
                     Ground shipping is free. There is a $25.00 fee on all rush orders.
-                </p>
+        </p>
             </div>
         )
     }
 }
+
+export const pageQuery = graphql`
+query DenturesQuery {
+  site {
+    siteMetadata {
+      title
+      description
+    }
+  }
+  imagedenture1: imageSharp(id: { regex: "/denture1.png/" }) {
+    resolutions(width: 223, height: 150) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+  imagedenture2: imageSharp(id: { regex: "/denture2.png/" }) {
+    resolutions(width: 228, height: 150) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+  imagedenture3: imageSharp(id: { regex: "/denture3.png/" }) {
+    resolutions(width: 223, height: 150) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+  imagedenture4: imageSharp(id: { regex: "/denture4.png/" }) {
+    resolutions(width: 270, height: 150) {
+      ...GatsbyImageSharpResolutions
+    }
+  }
+}
+`
