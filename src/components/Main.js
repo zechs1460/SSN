@@ -2,14 +2,18 @@ import PropTypes from 'prop-types';
 import React from 'react'
 import Img from 'gatsby-image'
 import styles from './Main.module.css'
+import Dentures from './Dentures'
+import Contact from './Contact'
+import { navigateTo } from "gatsby-link";
 
-export default class Main extends React.Component {
+class Main extends React.Component {
   render() {
     const close = <div className="close" onClick={() => { this.props.onCloseArticle() }}></div>
     return (
       <div id="main" style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
 
         <article id="Dentures" className={`${this.props.article === 'Dentures' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
+          {/*<Dentures/>*/}
           <div>
             <h3 className="major">Dentures</h3>
             <p>
@@ -440,54 +444,7 @@ export default class Main extends React.Component {
         </article>
 
         <article id="Contact" className={`${this.props.article === 'Contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
-          <div>
-
-            <h3 className="major">Contact</h3>
-
-            <p>
-              <strong>
-                Claudio Dental Lab
-            <br />
-                Tel: (912) 654-1001 &nbsp;&nbsp;&nbsp;&nbsp;
-                Fax: (912) 654-1011
-            <br />
-                Email: claudiodentallab@outlook.com
-            <br />
-                13918 GA Hwy-169, Glennville, GA 30427
-            </strong>
-            </p>
-
-            <form method="post" action="#">
-              <div className="field">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div className="field half first">
-                <label htmlFor="name">Phone</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div className="field half">
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-              <ul className="actions">
-                <li><input type="submit" value="Send Message" className="special" /></li>
-                <li><input type="reset" value="Reset" className="special" /></li>
-              </ul>
-            </form>
-
-            <ul className="icons">
-              <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-              <li><a href="https://www.facebook.com/pages/Claudio-Dental-Laboratory/508003735999660" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-              <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-              <li><a href="https://github.com/zechs1460/ClaudioDentalLab" className="icon fa-github"><span className="label">GitHub</span></a></li>
-            </ul>
-
-          </div>
+          <Contact />
           {close}
         </article>
 
@@ -543,6 +500,8 @@ export default class Main extends React.Component {
   }
 }
 
+export default Main
+
 Main.propTypes = {
   route: PropTypes.object,
   article: PropTypes.string,
@@ -550,3 +509,6 @@ Main.propTypes = {
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
 }
+
+
+

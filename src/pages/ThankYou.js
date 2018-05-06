@@ -16,12 +16,10 @@ class IndexPage extends React.Component {
           <link href="./" />
         </Helmet>
         <Link to={`/`}><h1 className="major">{this.props.data.site.siteMetadata.title}</h1></Link>
-        <p>Something went wrong! Please try again.</p>
-        {/*
+        {/*<p>Something went wrong! Please try again.</p>*/}
           <p><strong>Thank you for contacting us. </strong></p>
           <p>We will soon reply to your message/comment.</p>
           <p>We can always be reached at 912-537-3434 if you need assistance immediatly.</p>
-          */}
         </div>
       )
     }
