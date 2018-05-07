@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import '../assets/scss/main.scss'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
@@ -14,7 +14,7 @@ class Template extends React.Component {
       timeout: false,
       articleTimeout: false,
       article: '',
-      loading: 'is-loading'
+      loading: 'is-loading',
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -22,53 +22,50 @@ class Template extends React.Component {
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' });
-    }, 100);
+      this.setState({ loading: '' })
+    }, 100)
   }
 
   componentWillUnmount() {
     if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId)
     }
   }
 
   handleOpenArticle(article) {
-
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
-      article
+      article,
     })
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout
+        timeout: !this.state.timeout,
       })
     }, 325)
 
     setTimeout(() => {
       this.setState({
-        articleTimeout: !this.state.articleTimeout
+        articleTimeout: !this.state.articleTimeout,
       })
     }, 350)
-
   }
 
   handleCloseArticle() {
-
     this.setState({
-      articleTimeout: !this.state.articleTimeout
+      articleTimeout: !this.state.articleTimeout,
     })
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout
+        timeout: !this.state.timeout,
       })
     }, 325)
 
     setTimeout(() => {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
-        article: ''
+        article: '',
       })
     }, 350)
   }
@@ -80,18 +77,22 @@ class Template extends React.Component {
 
     let rootPath = `/`
 
-    let content;
+    let content
 
     if (location.pathname === rootPath) {
       content = (
         <div id="wrapper">
-          <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+          <Header
+            onOpenArticle={this.handleOpenArticle}
+            timeout={this.state.timeout}
+          />
           <Main
             isArticleVisible={this.state.isArticleVisible}
             timeout={this.state.timeout}
             articleTimeout={this.state.articleTimeout}
             article={this.state.article}
             onCloseArticle={this.handleCloseArticle}
+            onOpenArticle={this.handleOpenArticle}
             /*background*/
             background={this.props.data.background}
             /*Dentures*/
@@ -145,26 +146,32 @@ class Template extends React.Component {
             /*Fixed*/
             imageFixed={this.props.data.imageFixed}
           />
-          <Footer timeout={this.state.timeout} />
+          <Footer
+            onOpenArticle={this.handleOpenArticle}
+            timeout={this.state.timeout}
+          />
 
-          <Img style={{
-            position: "absolute",
-            left: 0,
-            top: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: -1
-          }} 
-          sizes={this.props.data.background.sizes} />
-  
+          <Img
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              width: '100%',
+              height: '100%',
+              zIndex: -1,
+            }}
+            sizes={this.props.data.background.sizes}
+          />
         </div>
       )
     } else {
       content = (
         <div id="wrapper" className="page">
-          <div style={{
-            maxWidth: '1140px'
-          }}>
+          <div
+            style={{
+              maxWidth: '1140px',
+            }}
+          >
             {children()}
           </div>
         </div>
@@ -172,10 +179,17 @@ class Template extends React.Component {
     }
 
     return (
-      <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
-        <Helmet><title>{siteTitle}</title><meta name="description" content={siteDescription} /></Helmet>
+      <div
+        className={`body ${this.state.loading} ${
+          this.state.isArticleVisible ? 'is-article-visible' : ''
+        }`}
+      >
+        <Helmet>
+          <title>{siteTitle}</title>
+          <meta name="description" content={siteDescription} />
+        </Helmet>
         {content}
-        <div id="bg"></div>
+        <div id="bg" />
       </div>
     )
   }
@@ -184,223 +198,223 @@ class Template extends React.Component {
 export default Template
 
 export const pageQuery = graphql`
-query PageQuery {
-  site {
-    siteMetadata {
-      title
-      description
+  query PageQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
     }
-  }
-  background: imageSharp(id: { regex: "/bg.jpg/" }) {
-    sizes(maxWidth: 1920) {
-      ...GatsbyImageSharpSizes
+    background: imageSharp(id: { regex: "/bg.jpg/" }) {
+      sizes(maxWidth: 1920) {
+        ...GatsbyImageSharpSizes
+      }
     }
-  }
-
-  imagedenture1: imageSharp(id: { regex: "/denture1.png/" }) {
-    resolutions(width: 223, height: 150) {
-      ...GatsbyImageSharpResolutions
+    # Dentures
+    imagedenture1: imageSharp(id: { regex: "/denture1.png/" }) {
+      resolutions(width: 223, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagedenture2: imageSharp(id: { regex: "/denture2.png/" }) {
-    resolutions(width: 228, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imagedenture2: imageSharp(id: { regex: "/denture2.png/" }) {
+      resolutions(width: 228, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagedenture3: imageSharp(id: { regex: "/denture3.png/" }) {
-    resolutions(width: 223, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imagedenture3: imageSharp(id: { regex: "/denture3.png/" }) {
+      resolutions(width: 223, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagedenture4: imageSharp(id: { regex: "/denture4.png/" }) {
-    resolutions(width: 270, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imagedenture4: imageSharp(id: { regex: "/denture4.png/" }) {
+      resolutions(width: 270, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imagePartial1: imageSharp(id: { regex: "/Partial1.png/" }) {
-    resolutions(width: 200, height: 170) {
-      ...GatsbyImageSharpResolutions
+    # Partials
+    imagePartial1: imageSharp(id: { regex: "/Partial1.png/" }) {
+      resolutions(width: 200, height: 170) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagePartial2: imageSharp(id: { regex: "/Partial2.png/" }) {
-    resolutions(width: 200, height: 170) {
-      ...GatsbyImageSharpResolutions
+    imagePartial2: imageSharp(id: { regex: "/Partial2.png/" }) {
+      resolutions(width: 200, height: 170) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagePartial3: imageSharp(id: { regex: "/Partial3.png/" }) {
-    resolutions(width: 200, height: 170) {
-      ...GatsbyImageSharpResolutions
+    imagePartial3: imageSharp(id: { regex: "/Partial3.png/" }) {
+      resolutions(width: 200, height: 170) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagePartial4: imageSharp(id: { regex: "/Partial4.png/" }) {
-    resolutions(width: 200, height: 170) {
-      ...GatsbyImageSharpResolutions
+    imagePartial4: imageSharp(id: { regex: "/Partial4.png/" }) {
+      resolutions(width: 200, height: 170) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagePartial5: imageSharp(id: { regex: "/Partial5.png/" }) {
-    resolutions(width: 200, height: 170) {
-      ...GatsbyImageSharpResolutions
+    imagePartial5: imageSharp(id: { regex: "/Partial5.png/" }) {
+      resolutions(width: 200, height: 170) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imagePartial6: imageSharp(id: { regex: "/Partial6.png/" }) {
-    resolutions(width: 199, height: 170) {
-      ...GatsbyImageSharpResolutions
+    imagePartial6: imageSharp(id: { regex: "/Partial6.png/" }) {
+      resolutions(width: 199, height: 170) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageCrownAndBridge1: imageSharp(id: { regex: "/CrownAndBridge1.png/" }) {
-    resolutions(width: 115, height: 120) {
-      ...GatsbyImageSharpResolutions
+    # Crown and Bridge
+    imageCrownAndBridge1: imageSharp(id: { regex: "/CrownAndBridge1.png/" }) {
+      resolutions(width: 115, height: 120) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCrownAndBridge2: imageSharp(id: { regex: "/CrownAndBridge2.png/" }) {
-    resolutions(width: 191, height: 120) {
-      ...GatsbyImageSharpResolutions
+    imageCrownAndBridge2: imageSharp(id: { regex: "/CrownAndBridge2.png/" }) {
+      resolutions(width: 191, height: 120) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCrownAndBridge3: imageSharp(id: { regex: "/CrownAndBridge3.png/" }) {
-    resolutions(width: 150, height: 120) {
-      ...GatsbyImageSharpResolutions
+    imageCrownAndBridge3: imageSharp(id: { regex: "/CrownAndBridge3.png/" }) {
+      resolutions(width: 150, height: 120) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCrownAndBridge4: imageSharp(id: { regex: "/CrownAndBridge4.png/" }) {
-    resolutions(width: 167, height: 120) {
-      ...GatsbyImageSharpResolutions
+    imageCrownAndBridge4: imageSharp(id: { regex: "/CrownAndBridge4.png/" }) {
+      resolutions(width: 167, height: 120) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCrownAndBridge5: imageSharp(id: { regex: "/CrownAndBridge5.jpg/" }) {
-    resolutions(width: 164, height: 120) {
-      ...GatsbyImageSharpResolutions
+    imageCrownAndBridge5: imageSharp(id: { regex: "/CrownAndBridge5.jpg/" }) {
+      resolutions(width: 164, height: 120) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageCast1: imageSharp(id: { regex: "/Cast1.png/" }) {
-    resolutions(width: 186, height: 180) {
-      ...GatsbyImageSharpResolutions
+    # Cast
+    imageCast1: imageSharp(id: { regex: "/Cast1.png/" }) {
+      resolutions(width: 186, height: 180) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCast2: imageSharp(id: { regex: "/Cast2.png/" }) {
-    resolutions(width: 225, height: 180) {
-      ...GatsbyImageSharpResolutions
+    imageCast2: imageSharp(id: { regex: "/Cast2.png/" }) {
+      resolutions(width: 225, height: 180) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCast3: imageSharp(id: { regex: "/Cast3.png/" }) {
-    resolutions(width: 222, height: 180) {
-      ...GatsbyImageSharpResolutions
+    imageCast3: imageSharp(id: { regex: "/Cast3.png/" }) {
+      resolutions(width: 222, height: 180) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageCast4: imageSharp(id: { regex: "/Cast4.png/" }) {
-    resolutions(width: 216, height: 180) {
-      ...GatsbyImageSharpResolutions
+    imageCast4: imageSharp(id: { regex: "/Cast4.png/" }) {
+      resolutions(width: 216, height: 180) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageDigital1: imageSharp(id: { regex: "/Digital1.png/" }) {
-    resolutions(width: 180, height: 128) {
-      ...GatsbyImageSharpResolutions
+    # Digital
+    imageDigital1: imageSharp(id: { regex: "/Digital1.png/" }) {
+      resolutions(width: 180, height: 128) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital2: imageSharp(id: { regex: "/Digital2.png/" }) {
-    resolutions(width: 180, height: 128) {
-      ...GatsbyImageSharpResolutions
+    imageDigital2: imageSharp(id: { regex: "/Digital2.png/" }) {
+      resolutions(width: 180, height: 128) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital3: imageSharp(id: { regex: "/Digital3.png/" }) {
-    resolutions(width: 180, height: 128) {
-      ...GatsbyImageSharpResolutions
+    imageDigital3: imageSharp(id: { regex: "/Digital3.png/" }) {
+      resolutions(width: 180, height: 128) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital4: imageSharp(id: { regex: "/Digital4.png/" }) {
-    resolutions(width: 180, height: 128) {
-      ...GatsbyImageSharpResolutions
+    imageDigital4: imageSharp(id: { regex: "/Digital4.png/" }) {
+      resolutions(width: 180, height: 128) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital5: imageSharp(id: { regex: "/Digital5.png/" }) {
-    resolutions(width: 180, height: 101) {
-      ...GatsbyImageSharpResolutions
+    imageDigital5: imageSharp(id: { regex: "/Digital5.png/" }) {
+      resolutions(width: 180, height: 101) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital6: imageSharp(id: { regex: "/Digital6.png/" }) {
-    resolutions(width: 180, height: 115) {
-      ...GatsbyImageSharpResolutions
+    imageDigital6: imageSharp(id: { regex: "/Digital6.png/" }) {
+      resolutions(width: 180, height: 115) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital7: imageSharp(id: { regex: "/Digital7.png/" }) {
-    resolutions(width: 180, height: 106) {
-      ...GatsbyImageSharpResolutions
+    imageDigital7: imageSharp(id: { regex: "/Digital7.png/" }) {
+      resolutions(width: 180, height: 106) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageDigital8: imageSharp(id: { regex: "/Digital8.png/" }) {
-    resolutions(width: 180, height: 127) {
-      ...GatsbyImageSharpResolutions
+    imageDigital8: imageSharp(id: { regex: "/Digital8.png/" }) {
+      resolutions(width: 180, height: 127) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageAbout1: imageSharp(id: { regex: "/About1.jpg/" }) {
-    resolutions(width: 152, height: 200) {
-      ...GatsbyImageSharpResolutions
+    # About
+    imageAbout1: imageSharp(id: { regex: "/About1.jpg/" }) {
+      resolutions(width: 152, height: 200) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageAbout2: imageSharp(id: { regex: "/About2.jpg/" }) {
-    resolutions(width: 199, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imageAbout2: imageSharp(id: { regex: "/About2.jpg/" }) {
+      resolutions(width: 199, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageAbout3: imageSharp(id: { regex: "/About3.png/" }) {
-    resolutions(width: 183, height: 141) {
-      ...GatsbyImageSharpResolutions
+    imageAbout3: imageSharp(id: { regex: "/About3.png/" }) {
+      resolutions(width: 183, height: 141) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageAbout4: imageSharp(id: { regex: "/About4.png/" }) {
-    resolutions(width: 178, height: 141) {
-      ...GatsbyImageSharpResolutions
+    imageAbout4: imageSharp(id: { regex: "/About4.png/" }) {
+      resolutions(width: 178, height: 141) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageOther1: imageSharp(id: { regex: "/Other1.png/" }) {
-    resolutions(width: 180, height: 150) {
-      ...GatsbyImageSharpResolutions
+    # Other
+    imageOther1: imageSharp(id: { regex: "/Other1.png/" }) {
+      resolutions(width: 180, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageOther2: imageSharp(id: { regex: "/Other2.png/" }) {
-    resolutions(width: 187, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imageOther2: imageSharp(id: { regex: "/Other2.png/" }) {
+      resolutions(width: 187, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageOther3: imageSharp(id: { regex: "/Other3.png/" }) {
-    resolutions(width: 179, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imageOther3: imageSharp(id: { regex: "/Other3.png/" }) {
+      resolutions(width: 179, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageOther4: imageSharp(id: { regex: "/Other4.png/" }) {
-    resolutions(width: 155, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imageOther4: imageSharp(id: { regex: "/Other4.png/" }) {
+      resolutions(width: 155, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-  imageOther5: imageSharp(id: { regex: "/Other5.png/" }) {
-    resolutions(width: 199, height: 150) {
-      ...GatsbyImageSharpResolutions
+    imageOther5: imageSharp(id: { regex: "/Other5.png/" }) {
+      resolutions(width: 199, height: 150) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageML: imageSharp(id: { regex: "/ML.jpg/" }) {
-    resolutions(width: 550, height: 336) {
-      ...GatsbyImageSharpResolutions
+    # ML
+    imageML: imageSharp(id: { regex: "/ML.jpg/" }) {
+      resolutions(width: 550, height: 336) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageRX: imageSharp(id: { regex: "/RX.jpg/" }) {
-    resolutions(width: 415, height: 650) {
-      ...GatsbyImageSharpResolutions
+    # RX
+    imageRX: imageSharp(id: { regex: "/RX.jpg/" }) {
+      resolutions(width: 415, height: 650) {
+        ...GatsbyImageSharpResolutions
+      }
     }
-  }
-
-  imageFixed: imageSharp(id: { regex: "/Fixed.jpg/" }) {
-    resolutions(width: 985, height: 746) {
-      ...GatsbyImageSharpResolutions
+    # Fixed
+    imageFixed: imageSharp(id: { regex: "/Fixed.jpg/" }) {
+      resolutions(width: 985, height: 746) {
+        ...GatsbyImageSharpResolutions
+      }
     }
+    # End
   }
-
-}
 `

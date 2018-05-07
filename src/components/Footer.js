@@ -1,26 +1,36 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import React from 'react'
-import Link from 'gatsby-link'
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-    <div>
-      <p className="copyright">
-        <span className="item">&copy; Copyright Claudio Dental Lab</span>
-        &nbsp;
-        &#11044;
-        &nbsp;
-        <Link className="item" to={`/Privacy`}>Privacy Policy</Link>
-        &nbsp;
-        &#11044;
-        &nbsp;
-        <Link className="item" to={`/Terms`}>Terms of Use</Link>
-      </p>
-    </div>
+    <p className="copyright">
+      <span className="item">&copy; Copyright Claudio Dental Lab</span>
+      &nbsp; &#11044; &nbsp;
+      <a
+        className="item"
+        href="javascript:;"
+        onClick={() => {
+          props.onOpenArticle('Privacy')
+        }}
+      >
+        &copy; Privacy&nbsp;Policy
+      </a>
+      &nbsp; &#11044; &nbsp;
+      <a
+        className="item"
+        href="javascript:;"
+        onClick={() => {
+          props.onOpenArticle('Terms')
+        }}
+      >
+        Terms&nbsp;of&nbsp;Use
+      </a>
+    </p>
   </footer>
 )
 
 Footer.propTypes = {
+  onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
 }
 
