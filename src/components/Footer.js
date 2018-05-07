@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="copyright">
+    <p className="copyright">
       <span className="item">&copy; Copyright Claudio Dental Lab</span>
       &nbsp; &#11044; &nbsp;
       <a
@@ -25,7 +25,7 @@ const Footer = props => (
       >
         Terms&nbsp;of&nbsp;Use
       </a>
-    </div>
+    </p>
   </footer>
 )
 

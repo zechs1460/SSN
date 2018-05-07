@@ -196,18 +196,16 @@ class Privacy extends React.Component {
           their privacy. Accordingly, you may update, modify or remove this
           information at any time by doing any of the following:
         </p>
-        <p>
-          <ul>
-            <li>
-              Sending your request by email to: cdllaboratory@windstream.net
-            </li>
-            <li>
-              Visiting the following URL: http://www.claudiodentallab.com/ and
-              using the information on the “Contact Us” page
-            </li>
-            <li>Calling us at (912) 537-3434</li>
-          </ul>
-        </p>
+        <ul>
+          <li>
+            Sending your request by email to: cdllaboratory@windstream.net
+          </li>
+          <li>
+            Visiting the following URL: http://www.claudiodentallab.com/ and
+            using the information on the “Contact Us” page
+          </li>
+          <li>Calling us at (912) 537-3434</li>
+        </ul>
         <p>
           <strong>Changes to the Privacy Policy: </strong>
           We may at any time in our sole discretion revise or update this
