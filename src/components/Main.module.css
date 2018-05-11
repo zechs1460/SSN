@@ -21,24 +21,26 @@
   flex-wrap: wrap;
 }
 .flexItems {
-  width: 270px;
+  width: 260px;
   padding: 1rem;
   min-height: 200px;
 }
-form label  {
+form label {
   color: #1f497d !important;
   font-weight: bold;
   border-color: #1f497d !important;
 }
-form input, textarea {
+form input,
+textarea {
   color: #1f497d !important;
   border-color: #1f497d !important;
   font-size: 1.5rem;
 }
 @media print {
-    h3, p {
-        display: none !important;
-    }
+  h3,
+  p {
+    display: none !important;
+  }
 }
 h4 {
   font-weight: bold;

@@ -15,6 +15,7 @@ const Header = props => (
             Dentures
           </a>
         </li>
+        <div className="divide1" />
         <li>
           <a
             href="javascript:;"
