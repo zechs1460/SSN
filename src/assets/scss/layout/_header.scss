@@ -200,9 +200,13 @@
     }
   }
   /// **************************************************
+  /// This is around 950 px
   @include breakpoint(medium) {
     padding: 1.5rem 0;
-    @include vendor('align-items', 'unset');
+    @include vendor(
+      'align-items',
+      'unset'
+    ); // the original center makes it all inline, this will allow the items to go to a new row
 
     .content {
       .inner {
@@ -225,7 +229,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         //height: 110px;
-        height: 6.25rem;
+        height: 6.25rem; // The size of the ROW, therefore the higher, the more rows there are
 
         li {
           border-left: 0;
@@ -254,6 +258,7 @@
     }
   }
   /// **************************************************
+  /// This is around 750 px
   @include breakpoint(small) {
     padding: 1.5rem 0;
 
@@ -265,7 +270,7 @@
 
     nav {
       ul {
-        //@include vendor('flex-direction', 'column');
+        //@include vendor('flex-direction', 'column');  // the original center makes it all inline, this will allow the items to go to a new row
         min-width: 10rem;
         max-width: 100%;
         //background-color: rgb(196, 35, 142);  //Testing Only
@@ -273,7 +278,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         //height: 140px;
-        height: 9.35rem;
+        height: 9.35rem; // The size of the ROW, therefore the higher, the more rows there are
 
         li {
           border-left: 0;
@@ -301,6 +306,7 @@
     }
   }
   /// **************************************************
+  /// This is around 600 px
   @include breakpoint(xsmall) {
     @include vendor('align-items', 'center');
     padding: 1.5rem 0;
