@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
-      <span className="item">&copy; Copyright Claudio Dental Lab</span>
+      <span className="item">&copy;&nbsp;Copyright Claudio Dental Lab</span>
       &nbsp; &#11044; &nbsp;
       <a
         className="item"
@@ -13,7 +13,7 @@ const Footer = props => (
           props.onOpenArticle('Privacy')
         }}
       >
-        &copy; Privacy&nbsp;Policy
+        &copy;&nbsp;Privacy&nbsp;Policy
       </a>
       &nbsp; &#11044; &nbsp;
       <a

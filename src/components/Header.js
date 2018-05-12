@@ -33,7 +33,17 @@ const Header = props => (
               props.onOpenArticle('CrownAndBridge')
             }}
           >
-            Crown&nbsp;&amp;&nbsp;Bridge
+            Crown
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('CrownAndBridge')
+            }}
+          >
+            Bridge
           </a>
         </li>
         <li>
