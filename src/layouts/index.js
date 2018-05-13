@@ -24,6 +24,11 @@ class Template extends React.Component {
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
+    document.addEventListener('keyup', e => {
+      if (e.keyCode === 27 && this.state.isArticleVisible === true) {
+        this.handleCloseArticle()
+      }
+    })
   }
 
   componentWillUnmount() {
