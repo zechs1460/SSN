@@ -99,7 +99,7 @@ class Template extends React.Component {
             onCloseArticle={this.handleCloseArticle}
             onOpenArticle={this.handleOpenArticle}
             /*background*/
-            background={this.props.data.background}
+            //background={this.props.data.background}
             /*Dentures*/
             imagedenture1={this.props.data.imagedenture1}
             imagedenture2={this.props.data.imagedenture2}
@@ -156,7 +156,7 @@ class Template extends React.Component {
             timeout={this.state.timeout}
           />
 
-          <Img
+          {/*<Img
             style={{
               position: 'absolute',
               left: 0,
@@ -166,7 +166,7 @@ class Template extends React.Component {
               zIndex: -1,
             }}
             sizes={this.props.data.background.sizes}
-          />
+          />*/}
         </div>
       )
     } else {
@@ -210,11 +210,11 @@ export const pageQuery = graphql`
         description
       }
     }
-    background: imageSharp(id: { regex: "/bg.jpg/" }) {
-      sizes(maxWidth: 1920) {
-        ...GatsbyImageSharpSizes
-      }
-    }
+    #background: imageSharp(id: { regex: "/bg.jpg/" }) {
+    #  sizes(maxWidth: 1920) {
+    #    ...GatsbyImageSharpSizes
+    #  }
+    #}
     # Dentures
     imagedenture1: imageSharp(id: { regex: "/denture1.png/" }) {
       resolutions(width: 223, height: 150) {
