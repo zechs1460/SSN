@@ -198,7 +198,7 @@ class Privacy extends React.Component {
         </p>
         <ul>
           <li>
-            Sending your request by email to: cdllaboratory@windstream.net
+            Sending your request by email to: contact@claudiodentallab.com
           </li>
           <li>
             Visiting the following URL: http://www.claudiodentallab.com/ and
@@ -221,7 +221,7 @@ class Privacy extends React.Component {
           <strong>Contacting the Site: </strong>
           If you have questions concerning this privacy policy or the practices
           of the Site, you may contact Claudio Dental Lab at
-          cdllaboratory@windstream.net.
+          contact@claudiodentallab.com.
         </p>
       </div>
     )

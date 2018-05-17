@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
             <br />
             <br />
             <span className="icon alt fa-envelope">&nbsp;</span>
-            Email: claudiodentallab@outlook.com
+            Email: contact@claudiodentallab.com
             <br />
             <br />
             <span className="icon alt fa-home">&nbsp;</span>
