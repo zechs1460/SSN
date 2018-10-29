@@ -548,7 +548,6 @@ class Main extends React.Component {
               />
               <p>I know how to handle my tools. Watch as I sand stuff!</p>
             </div>
-            
           </div>
           {close}
         </article>
