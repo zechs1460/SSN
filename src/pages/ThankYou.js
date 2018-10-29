@@ -23,7 +23,7 @@ class IndexPage extends React.Component {
         </p>
         <p>We will soon reply to your message/comment.</p>
         <p>
-          We can always be reached at 585-483-9147 if you need assistance
+          We can always be reached at XXXX if you need assistance
           immediatly.
         </p>
       </div>

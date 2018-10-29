@@ -13,13 +13,13 @@ export default class Contact extends React.Component {
             <br />
             <br />
             <span className="icon alt fa-phone">&nbsp;</span>
-            Tel: (585) 483-9147 &nbsp;&nbsp;&nbsp;&nbsp;
+            Tel: (XXX) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="icon alt fa-envelope">&nbsp;</span>
-            Email: shannonsharp514@gmail.com
+            Email: XXX@XXX.com
             <br />
             <br />
             <span className="icon alt fa-home">&nbsp;</span>
-            5804 Cockram rd, Byron, NY 14422
+            XXX XXX, Le Roy, NY 14482
           </strong>
         </p>
 
@@ -59,11 +59,21 @@ export default class Contact extends React.Component {
 
         <ul className="icons">
           <li>
+            <a href="#" className="icon fa-twitter">
+              <span className="label">Twitter</span>
+            </a>
+          </li>
+          <li>
             <a
-              href="https://www.facebook.com/Shannons-Tables-2008776209374569/?ref=br_rs"
+              href="https://www.facebook.com/pages/Claudio-Dental-Laboratory/508003735999660"
               className="icon fa-facebook"
             >
               <span className="label">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" className="icon fa-instagram">
+              <span className="label">Instagram</span>
             </a>
           </li>
           <li>
