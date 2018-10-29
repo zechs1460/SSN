@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
-      <span className="item">&copy;&nbsp;Copyright Shannon Douglass</span>
+      <span className="item">&copy;&nbsp;Copyright Shannon Douglas</span>
       &nbsp; &#11044; &nbsp;
       <a
         className="item"
