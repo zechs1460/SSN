@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Claudio Dental Lab",
+    title: "Shannon's Tables",
     author: "Joseph Claudio",
-    description: "Claudio Dental Lab business site: Dentures, Partials, Crowns, Bridges"
+    description: "Shannon's Tables business site: Wooden Tables, Wooden Chairs, Wooden Stools, Wooden Stands, and more"
   },
   pathPrefix: '/',
   plugins: [

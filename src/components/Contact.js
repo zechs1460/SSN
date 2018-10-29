@@ -9,21 +9,17 @@ export default class Contact extends React.Component {
         <h3 className="major">Contact</h3>
         <p>
           <strong>
-            Claudio Dental Lab
+            Shannon Douglass
             <br />
             <br />
             <span className="icon alt fa-phone">&nbsp;</span>
-            Tel: (912) 654-1001 &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="icon alt fa-print">&nbsp;</span>
-            Fax: (912) 654-1011
-            <br />
-            <br />
+            Tel: (XXX) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="icon alt fa-envelope">&nbsp;</span>
-            Email: contact@claudiodentallab.com
+            Email: XXX@XXX.com
             <br />
             <br />
             <span className="icon alt fa-home">&nbsp;</span>
-            13918 GA Hwy-169, Glennville, GA 30427
+            XXX XXX, Le Roy, NY 14482
           </strong>
         </p>
 
@@ -82,7 +78,7 @@ export default class Contact extends React.Component {
           </li>
           <li>
             <a
-              href="https://github.com/zechs1460/ClaudioDentalLab"
+              href="https://github.com/zechs1460/ShannonsTables"
               className="icon fa-github"
             >
               <span className="label">GitHub</span>
