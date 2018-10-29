@@ -182,6 +182,20 @@ class Main extends React.Component {
                 </div>
               </div>
 
+              <div className={styles.flexItems}>
+                <Img
+                  className={styles.leftImg}
+                  resolutions={this.props.imageKS3.resolutions}
+                />
+                <div className={styles.clear}>
+                  <h4>Type 2</h4>
+                  <ul>
+                    <li>Good Point 1</li>
+                    <li>Good Point 2</li>
+                  </ul>
+                </div>
+              </div>
+
               </div>
               </div>
             {close}
@@ -272,6 +286,48 @@ class Main extends React.Component {
                 <Img
                   className={styles.leftImg}
                   resolutions={this.props.imageSt2.resolutions}
+                />
+                <div className={styles.clear}>
+                  <h4>Type 2</h4>
+                  <ul>
+                    <li>Good Point 1</li>
+                    <li>Good Point 2</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles.flexItems}>
+                <Img
+                  className={styles.leftImg}
+                  resolutions={this.props.imageSt3.resolutions}
+                />
+                <div className={styles.clear}>
+                  <h4>Type 2</h4>
+                  <ul>
+                    <li>Good Point 1</li>
+                    <li>Good Point 2</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles.flexItems}>
+                <Img
+                  className={styles.leftImg}
+                  resolutions={this.props.imageSt4.resolutions}
+                />
+                <div className={styles.clear}>
+                  <h4>Type 2</h4>
+                  <ul>
+                    <li>Good Point 1</li>
+                    <li>Good Point 2</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={styles.flexItems}>
+                <Img
+                  className={styles.leftImg}
+                  resolutions={this.props.imageSt5.resolutions}
                 />
                 <div className={styles.clear}>
                   <h4>Type 2</h4>
@@ -416,6 +472,17 @@ class Main extends React.Component {
                         />
                         <div className={styles.clear}>
                           <h4>Phone Stands</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div className={styles.flexItems}>
+                        <Img
+                          className={styles.leftImg}
+                          resolutions={this.props.imageOt7.resolutions}
+                        />
+                        <div className={styles.clear}>
+                          <h4>Chests</h4>
                         </div>
                       </div>
                     </div>

@@ -110,12 +110,16 @@ class Template extends React.Component {
             /*Kid Size*/
             imageKS1={this.props.data.imageKS1}
             imageKS2={this.props.data.imageKS2}
+            imageKS3={this.props.data.imageKS3}
             /*Chairs*/
             imageCh1={this.props.data.imageCh1}
             imageCh2={this.props.data.imageCh2}
             /*Stools*/
             imageSt1={this.props.data.imageSt1}
             imageSt2={this.props.data.imageSt2}
+            imageSt3={this.props.data.imageSt3}
+            imageSt4={this.props.data.imageSt4}
+            imageSt5={this.props.data.imageSt5}
             /*Stands*/
             imageSta1={this.props.data.imageSta1}
             imageSta2={this.props.data.imageSta2}
@@ -128,6 +132,7 @@ class Template extends React.Component {
             imageOt4={this.props.data.imageOt4}
             imageOt5={this.props.data.imageOt5}
             imageOt6={this.props.data.imageOt6}
+            imageOt7={this.props.data.imageOt7}
             /*About*/
             imageAb1={this.props.data.imageAb1}
             imageAb2={this.props.data.imageAb2}
@@ -240,6 +245,11 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpResolutions
       }
     }
+    imageKS3: imageSharp(id: { regex: "/KS-3.jpg/" }) {
+      resolutions(width: 220, height: 163) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
     # Chairs
     imageCh1: imageSharp(id: { regex: "/Ch-1.png/" }) {
       resolutions(width: 129, height: 200) {
@@ -259,6 +269,21 @@ export const pageQuery = graphql`
     }
     imageSt2: imageSharp(id: { regex: "/St-2.png/" }) {
       resolutions(width: 138, height: 200) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    imageSt3: imageSharp(id: { regex: "/St-3.jpg/" }) {
+      resolutions(width: 220, height: 142) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    imageSt4: imageSharp(id: { regex: "/St-4.jpg/" }) {
+      resolutions(width: 220, height: 156) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    imageSt5: imageSharp(id: { regex: "/St-5.jpg/" }) {
+      resolutions(width: 190, height: 220) {
         ...GatsbyImageSharpResolutions
       }
     }
@@ -311,6 +336,11 @@ export const pageQuery = graphql`
     }
     imageOt6: imageSharp(id: { regex: "/Ot-6.jpg/" }) {
       resolutions(width: 200, height: 194) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    imageOt7: imageSharp(id: { regex: "/Ot-7.jpg/" }) {
+      resolutions(width: 220, height: 153) {
         ...GatsbyImageSharpResolutions
       }
     }
