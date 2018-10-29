@@ -199,7 +199,7 @@ class Main extends React.Component {
               </div>
               </div>
             {close}
-        </article>
+          </article>
           {/*---------------------------------------------------------------------------------------------------*/}
           <article id="Chairs" className={`${ this.props.article === 'Chairs' ? 'active' : '' } ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
             <div>
