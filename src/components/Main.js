@@ -41,7 +41,6 @@ class Main extends React.Component {
             </div>
 
             <div className={styles.flexContainer}>
-
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -129,7 +128,6 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
           {close}
@@ -153,7 +151,6 @@ class Main extends React.Component {
             </div>
 
             <div className={styles.flexContainer}>
-
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -188,17 +185,15 @@ class Main extends React.Component {
                   resolutions={this.props.imageKS3.resolutions}
                 />
                 <div className={styles.clear}>
-                  <h4>Type 3</h4>
+                  <h4>Type 2</h4>
                   <ul>
                     <li>Good Point 1</li>
                     <li>Good Point 2</li>
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
-
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
@@ -220,7 +215,7 @@ class Main extends React.Component {
             </div>
 
             <div className={styles.flexContainer}>
-
+              {/*-- Flex Container --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -234,7 +229,7 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -248,10 +243,11 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
             </div>
+            {/*-- Flex Container --*/}
           </div>
-
+          {/*-- Article --*/}
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
@@ -263,6 +259,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <div>
+            {/*-- Article --*/}
             <h3 className="major">Stools</h3>
 
             <div className={styles.clear}>
@@ -273,7 +270,7 @@ class Main extends React.Component {
             </div>
 
             <div className={styles.flexContainer}>
-
+              {/*-- Flex Container --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -287,7 +284,7 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -301,52 +298,53 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
                   resolutions={this.props.imageSt3.resolutions}
                 />
                 <div className={styles.clear}>
-                  <h4>Type 3</h4>
+                  <h4>Type 2</h4>
                   <ul>
                     <li>Good Point 1</li>
                     <li>Good Point 2</li>
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
                   resolutions={this.props.imageSt4.resolutions}
                 />
                 <div className={styles.clear}>
-                  <h4>Type 4</h4>
+                  <h4>Type 2</h4>
                   <ul>
                     <li>Good Point 1</li>
                     <li>Good Point 2</li>
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
                   resolutions={this.props.imageSt5.resolutions}
                 />
                 <div className={styles.clear}>
-                  <h4>Type 5</h4>
+                  <h4>Type 2</h4>
                   <ul>
                     <li>Good Point 1</li>
                     <li>Good Point 2</li>
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
             </div>
+            {/*-- Flex Container --*/}
           </div>
-
+          {/*-- Article --*/}
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
@@ -358,8 +356,8 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <div>
+            {/*-- Articles --*/}
             <h3 className="major">Stands</h3>
-
             <div className={styles.clear}>
               <p>
                 <strong>Rawr. </strong>
@@ -368,7 +366,7 @@ class Main extends React.Component {
             </div>
 
             <div className={styles.flexContainer}>
-
+              {/*-- Flex Container --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -382,7 +380,7 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -396,7 +394,7 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -410,7 +408,7 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -424,9 +422,11 @@ class Main extends React.Component {
                   </ul>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
             </div>
+            {/*-- Flex Container --*/}
           </div>
+          {/*-- Article --*/}
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
@@ -438,10 +438,11 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <div>
+            {/*-- Article --*/}
             <h3 className="major">Other Products</h3>
 
             <div className={styles.flexContainer}>
-
+              {/*-- Flex Container --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -451,7 +452,7 @@ class Main extends React.Component {
                   <h4>Easels</h4>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -461,7 +462,7 @@ class Main extends React.Component {
                   <h4>PS4 Stands</h4>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -471,7 +472,7 @@ class Main extends React.Component {
                   <h4>Benches</h4>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -481,7 +482,7 @@ class Main extends React.Component {
                   <h4>Phone Stands</h4>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
                 <Img
                   className={styles.leftImg}
@@ -491,14 +492,24 @@ class Main extends React.Component {
                   <h4>Chests</h4>
                 </div>
               </div>
-
+              {/*-- Flex Item --*/}
             </div>
+            {/*-- Flex Container --*/}
 
             <p>
               And anything else you need, <strong>just ask!</strong>
             </p>
 
+            <Img
+              className={styles.leftImg}
+              resolutions={this.props.imageOt5.resolutions}
+            />
+            <Img
+              className={styles.rightImg}
+              resolutions={this.props.imageOt3.resolutions}
+            />
           </div>
+          {/*-- Article --*/}
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
@@ -510,6 +521,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <div>
+            {/*-- Article --*/}
             <h3 className="major">About Us</h3>
 
             <div className={styles.clear}>
@@ -533,22 +545,13 @@ class Main extends React.Component {
 
             <div className={styles.clear}>
               <Img
-                className={styles.leftImg}
-                resolutions={this.props.imageAb3.resolutions}
-              />
-              <p>
-                <strong>Look at how boldly I measure stuff!</strong>
-              </p>
-            </div>
-
-            <div className={styles.clear}>
-              <Img
                 className={styles.rightImg}
                 resolutions={this.props.imageAb4.resolutions}
               />
               <p>I know how to handle my tools. Watch as I sand stuff!</p>
             </div>
           </div>
+          {/*-- Article --*/}
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
