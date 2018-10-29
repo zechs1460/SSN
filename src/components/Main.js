@@ -521,9 +521,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <div>
-            {/*-- Article --*/}
             <h3 className="major">About Us</h3>
-
             <div className={styles.clear}>
               <Img
                 className={styles.leftImg}
@@ -531,7 +529,6 @@ class Main extends React.Component {
               />
               <p>I kick ass! Buy my stuff!</p>
             </div>
-
             <div className={styles.clear}>
               <Img
                 className={styles.rightImg}
@@ -542,7 +539,15 @@ class Main extends React.Component {
                 though.
               </p>
             </div>
-
+            <div className={styles.clear}>
+              <Img
+                className={styles.leftImg}
+                resolutions={this.props.imageAb3.resolutions}
+              />
+              <p>
+                <strong>Look at how boldly I measure stuff!</strong>
+              </p>
+            </div>
             <div className={styles.clear}>
               <Img
                 className={styles.rightImg}
@@ -550,8 +555,8 @@ class Main extends React.Component {
               />
               <p>I know how to handle my tools. Watch as I sand stuff!</p>
             </div>
+            
           </div>
-          {/*-- Article --*/}
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
