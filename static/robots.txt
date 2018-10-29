@@ -1,5 +1,3 @@
 User-agent: *
 
 Allow: /
-#Sitemap Reference
-Sitemap:http://www.claudiodentallab.com/sitemap.xml
