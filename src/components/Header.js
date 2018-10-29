@@ -9,10 +9,10 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Dentures')
+              props.onOpenArticle('Full_Size')
             }}
           >
-            Dentures
+            Full&nbsp;Size
           </a>
         </li>
         <div className="divide1" />
@@ -20,40 +20,49 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Partials')
+              props.onOpenArticle('Kid_Size')
             }}
           >
-            FRS&nbsp;Partials
+            Kid&nbsp;Size
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('CrownAndBridge')
+              props.onOpenArticle('Chairs')
             }}
           >
-            Crown
+            Chairs
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('CrownAndBridge')
+              props.onOpenArticle('Stools')
             }}
           >
-            Bridge
+            Stools
           </a>
         </li>
-        <li>
+      </ul>
+    </nav>
+    <div className="content">
+      <div className="inner">
+        <h6>Shannon's Tables</h6>
+      </div>
+    </div>
+    <nav>
+      <ul>
+      <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Cast')
+              props.onOpenArticle('Stands')
             }}
           >
-            Cast&nbsp;Metal
+            Stands
           </a>
         </li>
         <li>
@@ -64,25 +73,6 @@ const Header = props => (
             }}
           >
             Other&nbsp;Products
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div className="content">
-      <div className="inner">
-        <h6>Claudio Dental Lab</h6>
-      </div>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('Digital')
-            }}
-          >
-            Digital
           </a>
         </li>
         <li>
@@ -103,36 +93,6 @@ const Header = props => (
             }}
           >
             Contact
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('ML')
-            }}
-          >
-            Mailing&nbsp;Label
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('RX')
-            }}
-          >
-            RX&nbsp;Form
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('Fixed')
-            }}
-          >
-            Fixed&nbsp;Form
           </a>
         </li>
       </ul>

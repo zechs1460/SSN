@@ -139,13 +139,13 @@
           text-transform: uppercase;
           letter-spacing: _font(letter-spacing);
           border-bottom: 0;
-          color: #1f497d; /*Navy Blue*/
+          color: #4d4529; /* Links to Articles */
           font-size: 1.1rem;
           font-weight: 540;
 
           &:hover {
             background-color: _palette(border-bg);
-            color: #00ccfe; /*Light Blue*/
+            color: #00ccfe; /* Link to Article Hover */
           }
 
           &:active {
