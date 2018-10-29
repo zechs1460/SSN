@@ -435,6 +435,7 @@ class Main extends React.Component {
                     <h3 className="major">Other Products</h3>
 
                     <div className={styles.flexContainer}>
+
                       <div className={styles.flexItems}>
                         <Img
                           className={styles.leftImg}
@@ -474,7 +475,7 @@ class Main extends React.Component {
                           <h4>Phone Stands</h4>
                         </div>
                       </div>
-                    </div>
+                      
 
                       <div className={styles.flexItems}>
                         <Img
@@ -485,7 +486,9 @@ class Main extends React.Component {
                           <h4>Chests</h4>
                         </div>
                       </div>
-                    </div>
+                    
+                      </div>
+
 
                     <p>
                       And anything else you need, <strong>just ask!</strong>
