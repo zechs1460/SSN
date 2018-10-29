@@ -35,7 +35,7 @@ class Main extends React.Component {
 
             <div className={styles.clear}>
               <p>
-                <strong>I can make good tables! Check em' out! </strong>
+                <strong>I can make good tables! Check em out! </strong>
                 If you love me long time, I can even shine them!
               </p>
             </div>
