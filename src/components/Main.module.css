@@ -26,14 +26,14 @@
   min-height: 200px;
 }
 form label {
-  color: #4d4529 !important;
+  color: #1f497d !important;
   font-weight: bold;
-  border-color: #4d4529 !important;
+  border-color: #1f497d !important;
 }
 form input,
 textarea {
-  color: #4d4529 !important;
-  border-color: #4d4529 !important;
+  color: #1f497d !important;
+  border-color: #1f497d !important;
   font-size: 1.5rem;
 }
 @media print {
@@ -44,7 +44,7 @@ textarea {
 }
 h4 {
   font-weight: bold;
-  color: #4d4529 !important;
+  color: #1f497d !important;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: normal;
   text-transform: capitalize;

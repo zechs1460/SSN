@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Shannon's Tables",
+    title: "Perez y Altieri",
     author: "Joseph Claudio",
-    description: "Shannon's Tables business site: Wooden Tables, Wooden Chairs, Wooden Stools, Wooden Stands, and more"
+    description: "Website for the Law Offices of Perez y Altieri: Social Security, Disablility claims, appeals, and more"
   },
   pathPrefix: '/',
   plugins: [

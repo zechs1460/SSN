@@ -6,7 +6,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h3 className="major">Contact Us</h3> 
+        <h3 className="major">Web Form</h3> 
         <p>
           <strong>
             Perez y Altieri Office

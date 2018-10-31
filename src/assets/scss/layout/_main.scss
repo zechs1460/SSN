@@ -109,22 +109,30 @@
 		}
 	}
 }
-h3 {
+h3 {	// Article Header
 	font-size: 1.5rem;
 	line-height: 1.4;
 	letter-spacing: _font(letter-spacing-heading);
+	color: #032146; /*Navy Blue*/
 
 	&.major:hover {
-		color: #4d4529; /*Navy Blue*/
+		color: #1f497d; /*Navy Blue*/
 		text-decoration:inherit;
 	}
 }
-strong {
-	color:#4d4529;
+h4 {	// Section Headers
+	padding-top: 1.5em;
+
+	&:first-child {
+		margin-top: -5em;
+	}
+}
+strong {	// Bold Text
+	color:#032146;	
 }
 
 a {
-	color:#4d4529; /*Navy Blue*/
+	color:#032146; /*Navy Blue*/
 	font-weight: bold;
 }
 a:hover {

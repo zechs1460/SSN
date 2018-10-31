@@ -9,9 +9,9 @@ class Privacy extends React.Component {
       <div>
         <h3 className="major">Privacy Policy</h3>
         <p>
-          Shannon's Tables Inc. (hereinafter “Shannon's Tables”) maintains
+          Perez y Altieri  Inc. (hereinafter “Perez y Altieri ”) maintains
           this site (the “Site”) for your personal entertainment, information,
-          education and communication. Shannon's Tables takes your privacy
+          education and communication. Perez y Altieri  takes your privacy
           seriously and is committed to safeguarding your privacy online.
           Because we do gather certain types of information from visitors to the
           Site, we have developed a privacy statement to help you understand the
@@ -22,20 +22,20 @@ class Privacy extends React.Component {
         </p>
         <p>
           <strong>Guiding Principles: </strong>
-          Shannon's Tables respects the privacy of individuals who visit the
+          Perez y Altieri  respects the privacy of individuals who visit the
           Site, send us email, or participate in features/services we offer
           online. Accordingly, our policy regarding online privacy has been
-          developed using the following guiding principles: Shannon's Tables
+          developed using the following guiding principles: Perez y Altieri 
           maintains a strict “no-spam” policy. Subscribers to our email services
           or any other feature/service found on the Site will not receive
-          unsolicited email messages from Shannon's Tables. Shannon's Tables
+          unsolicited email messages from Perez y Altieri . Perez y Altieri 
           collects information online primarily to provide our visitors with a
           more relevant experience on the Site. When doing so, we will make
           every reasonable effort to avoid excessive or irrelevant collection of
-          data. Shannon's Tables will take reasonable physical, electronic and
+          data. Perez y Altieri  will take reasonable physical, electronic and
           managerial measures to safeguard and secure any information you
           provide to us (e.g. data will be stored in protected databases on
-          secured servers with restricted access). Shannon's Tables will not
+          secured servers with restricted access). Perez y Altieri  will not
           share any information you have provided to us with anyone without your
           consent other than to provide the service you have requested. At the
           time you register for any such service, you will be notified of, and
@@ -52,7 +52,7 @@ class Privacy extends React.Component {
           address, (i.e. the unique number used to identify your computer) and
           any search engine you may have used to locate the Site. We use this
           information to help diagnose problems with our server, administer the
-          Site, and compile broad statistical data. In addition, Shannon's Tables
+          Site, and compile broad statistical data. In addition, Perez y Altieri 
            gathers certain navigational information about where you go on the
           Site. This information enables us to determine which areas of the Site
           are most frequently visited and helps us to tailor the Site to the
@@ -84,7 +84,7 @@ class Privacy extends React.Component {
         </p>
         <p>
           <strong>How We Communicate with You: </strong>
-          Shannon's Tables may send authorized communications to you on the
+          Perez y Altieri  may send authorized communications to you on the
           basis of the information you provide to us through email or regular
           mail. We will not contact you by telephone, fax, or other means unless
           you have explicitly requested us to contact you in response to a
@@ -94,31 +94,31 @@ class Privacy extends React.Component {
         </p>
         <p>
           <strong>Disclosure of Personal Information: </strong>
-          Shannon's Tables understands the importance of your privacy. We
+          Perez y Altieri  understands the importance of your privacy. We
           collect and maintain the personal information of our customers for the
-          use of Shannon's Tables and its subsidiaries. We do not sell, rent,
+          use of Perez y Altieri  and its subsidiaries. We do not sell, rent,
           or trade customer information to third parties, other than as
           described below, and never without your consent: Business Partners:
-          Shannon's Tables may partner with select distributors and other
+          Perez y Altieri  may partner with select distributors and other
           companies at various times to provide expanded services to Site
-          visitors. As part of such a relationship, Shannon's Tables may share
+          visitors. As part of such a relationship, Perez y Altieri  may share
           with these companies the use of certain interactive website functions
           (e.g. email). Information provided by Site visitors through the use of
-          such interactive functions may be availe to both Shannon's Tables
-          and its partners. Agents: Shannon's Tables may use other companies
+          such interactive functions may be availe to both Perez y Altieri 
+          and its partners. Agents: Perez y Altieri  may use other companies
           and individuals to perform certain functions on our behalf. Examples
           include administering email services and running special promotions.
           Such parties only have access to the personal information needed to
           perform these functions and may not use or store the information for
           any other purpose. Subscribers or Site visitors will never receive
           unsolicited email messages from agents working on our behalf. Business
-          Transfers: In the event that Shannon's Tables sells or transfers a
+          Transfers: In the event that Perez y Altieri  sells or transfers a
           particular portion of its business assets, consumer information may be
           one of the business assets transferred as part of the transaction. If
-          substantially all of the assets of Shannon's Tables are acquired,
+          substantially all of the assets of Perez y Altieri  are acquired,
           information of the types listed in the “Information Collected” section
           above may be transferred as part of the acquisition. Compliance with
-          Law/Safety: Shannon's Tables may disclose specific personal
+          Law/Safety: Perez y Altieri  may disclose specific personal
           information based on a good-faith belief that such disclosure is
           necessary to comply with or conform to the law or that such disclosure
           is necessary to protect the users of the Site, the Sites itself, or
@@ -134,13 +134,13 @@ class Privacy extends React.Component {
         </p>
         <p>
           <strong>Use of Cookies: </strong>
-          Shannon's Tables may use a browser feature known as a “cookie.”
-          Cookies are small files placed on your hard drive that assist Shannon's Tables
+          Perez y Altieri  may use a browser feature known as a “cookie.”
+          Cookies are small files placed on your hard drive that assist Perez y Altieri 
             in providing you with a customized browsing experience.
-          Shannon's Tables uses cookies to provide you with the convenience of
+          Perez y Altieri  uses cookies to provide you with the convenience of
           not having to re-enter information, such as user IDs and passwords,
           multiple times during your visits to the Site. Cookies can also be
-          utilized to help Shannon's Tables provide you with information
+          utilized to help Perez y Altieri  provide you with information
           targeted to your interests, based upon your prior browsing on the
           Site. The “help” section of the toolbar on most browsers will inform
           you on how to prevent your browser from accepting new cookies, how to
@@ -161,9 +161,9 @@ class Privacy extends React.Component {
         </p>
         <p>
           <strong>External Links: </strong>
-          The Site may contain links to other websites. Shannon's Tables is
+          The Site may contain links to other websites. Perez y Altieri  is
           not responsible for the privacy practices or the content of such
-          websites. To help ensure the protection of your privacy, Shannon's Tables
+          websites. To help ensure the protection of your privacy, Perez y Altieri 
             recommends that you review the privacy policy of any
           website you visit via a link from the Site.
         </p>
@@ -185,23 +185,23 @@ class Privacy extends React.Component {
         </p>
         <p>
           <strong>Opt-Out Procedures: </strong>
-          You may always opt out of receiving future communications from Shannon's Tables
+          You may always opt out of receiving future communications from Perez y Altieri 
            . Our Site allows users to opt-out of receiving such
           communications at the point where personal information is requested,
           or through other means as identified.
         </p>
         <p>
           <strong>Correcting, Updating and Removing Information: </strong>
-          Shannon's Tables supports the individual&#39;s right to protect
+          Perez y Altieri  supports the individual&#39;s right to protect
           their privacy. Accordingly, you may update, modify or remove this
           information at any time by doing any of the following:
         </p>
         <ul>
           <li>
-            Sending your request by email to: contact@Shannon's Tables.com
+            Sending your request by email to: contact@Perez y Altieri .com
           </li>
           <li>
-            Visiting the following URL: http://www.Shannon's Tables.com/ and
+            Visiting the following URL: http://www.Perez y Altieri .com/ and
             using the information on the “Contact Us” page
           </li>
           <li>Calling us at (912) 537-3434</li>
@@ -214,14 +214,14 @@ class Privacy extends React.Component {
           the Site thereafter. Your continued use of the Site following the
           posting of revised Privacy Policy means that you accept and agree to
           the changes. You are expected to check this page from time to time so
-          you are aware of any changes, as they are binding on you. Shannon's Tables
+          you are aware of any changes, as they are binding on you. Perez y Altieri 
             reserves the right to revoke your access to the Site.
         </p>
         <p>
           <strong>Contacting the Site: </strong>
           If you have questions concerning this privacy policy or the practices
-          of the Site, you may contact Shannon's Tables at
-          contact@Shannon's Tables.com.
+          of the Site, you may contact Perez y Altieri  at
+          contact@Perez y Altieri .com.
         </p>
       </div>
     )

@@ -9,48 +9,38 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Full_Size')
+              props.onOpenArticle('Start')
             }}
           >
-            Full&nbsp;Size
-          </a>
-        </li>
-        <div className="divide1" />
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('Kid_Size')
-            }}
-          >
-            Kid&nbsp;Size
+            Start&nbsp;Here
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Chairs')
+              props.onOpenArticle('Evaluation')
             }}
           >
-            Chairs
+            Evaluation
           </a>
         </li>
         <li>
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Stools')
+              props.onOpenArticle('Forms')
             }}
           >
-            Stools
+            Legal Forms
           </a>
         </li>
+ 
       </ul>
     </nav>
     <div className="content">
       <div className="inner">
-        <h6>Shannon's Tables</h6>
+        <h6>Perez y Altieri</h6>
       </div>
     </div>
     <nav>
@@ -59,30 +49,10 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('Stands')
-            }}
-          >
-            Stands
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('Other')
-            }}
-          >
-            Other&nbsp;Products
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
               props.onOpenArticle('About')
             }}
           >
-            About
+            About&nbsp;Us
           </a>
         </li>
         <li>
@@ -92,7 +62,7 @@ const Header = props => (
               props.onOpenArticle('Contact')
             }}
           >
-            Contact
+            Make&nbsp;Appointment
           </a>
         </li>
       </ul>

@@ -101,43 +101,14 @@ class Template extends React.Component {
             /*background*/
             //background={this.props.data.background}
             /*Full Size*/ 
-            imageFS1={this.props.data.imageFS1}
-            imageFS2={this.props.data.imageFS2}
-            imageFS3={this.props.data.imageFS3}
-            imageFS4={this.props.data.imageFS4}
-            imageFS5={this.props.data.imageFS5}
-            imageFS6={this.props.data.imageFS6}
-            /*Kid Size*/
-            imageKS1={this.props.data.imageKS1}
-            imageKS2={this.props.data.imageKS2}
-            imageKS3={this.props.data.imageKS3}
-            /*Chairs*/
-            imageCh1={this.props.data.imageCh1}
-            imageCh2={this.props.data.imageCh2}
-            /*Stools*/
-            imageSt1={this.props.data.imageSt1}
-            imageSt2={this.props.data.imageSt2}
-            imageSt3={this.props.data.imageSt3}
-            imageSt4={this.props.data.imageSt4}
-            imageSt5={this.props.data.imageSt5}
-            /*Stands*/
-            imageSta1={this.props.data.imageSta1}
-            imageSta2={this.props.data.imageSta2}
-            imageSta3={this.props.data.imageSta3}
-            imageSta4={this.props.data.imageSta4}
-            /*Others*/
-            imageOt1={this.props.data.imageOt1}
-            imageOt2={this.props.data.imageOt2}
-            imageOt3={this.props.data.imageOt3}
-            imageOt4={this.props.data.imageOt4}
-            imageOt5={this.props.data.imageOt5}
-            imageOt6={this.props.data.imageOt6}
-            imageOt7={this.props.data.imageOt7}
-            /*About*/
-            imageAb1={this.props.data.imageAb1}
-            imageAb2={this.props.data.imageAb2}
-            imageAb3={this.props.data.imageAb3}
-            imageAb4={this.props.data.imageAb4}
+            image1={this.props.data.image1}
+            image2={this.props.data.image2}
+            image3={this.props.data.image3}
+            image4={this.props.data.image4}
+            imagePR={this.props.data.imagePR}
+            imagePY={this.props.data.imagePY}
+            imagePO={this.props.data.imagePO}
+            imageMom={this.props.data.imageMom}
           />
           <Footer
             onOpenArticle={this.handleOpenArticle}
@@ -204,164 +175,43 @@ export const pageQuery = graphql`
     #  }
     #}
     # Full Size
-    imageFS1: imageSharp(id: { regex: "/FS-1.jpg/" }) {
-      resolutions(width: 200, height: 100) {
+    image1: imageSharp(id: { regex: "/1.png/" }) {
+      resolutions(width: 240, height: 158) {
         ...GatsbyImageSharpResolutions
       }
     }
-    imageFS2: imageSharp(id: { regex: "/FS-2.png/" }) {
-      resolutions(width: 200, height: 108) {
+    image2: imageSharp(id: { regex: "/2.jpg/" }) {
+      resolutions(width: 220, height: 146) {
         ...GatsbyImageSharpResolutions
       }
     }
-    imageFS3: imageSharp(id: { regex: "/FS-3.png/" }) {
-      resolutions(width: 200, height: 121) {
+    image3: imageSharp(id: { regex: "/3.jpg/" }) {
+      resolutions(width: 1304, height: 300) {
         ...GatsbyImageSharpResolutions
       }
     }
-    imageFS4: imageSharp(id: { regex: "/FS-4.jpg/" }) {
-      resolutions(width: 200, height: 170) {
+    image4: imageSharp(id: { regex: "/4.jpg/" }) {
+      resolutions(width: 250, height: 113) {
         ...GatsbyImageSharpResolutions
       }
     }
-    imageFS5: imageSharp(id: { regex: "/FS-5.jpg/" }) {
-      resolutions(width: 200, height: 181) {
+    imagePR: imageSharp(id: { regex: "/PRs.jpg/" }) {
+      resolutions(width: 300, height: 187) {
         ...GatsbyImageSharpResolutions
       }
     }
-    imageFS6: imageSharp(id: { regex: "/FS-6.png/" }) {
-      resolutions(width: 200, height: 133) {
+    imagePY: imageSharp(id: { regex: "/Pagely Young.jpg/" }) {
+      resolutions(width: 193, height: 200) {
         ...GatsbyImageSharpResolutions
       }
     }
-    # Kid Size
-    imageKS1: imageSharp(id: { regex: "/KS-1.jpg/" }) {
-      resolutions(width: 200, height: 128) {
+    imagePO: imageSharp(id: { regex: "/Pagely Old.JPG/" }) {
+      resolutions(width: 175, height: 210) {
         ...GatsbyImageSharpResolutions
       }
     }
-    imageKS2: imageSharp(id: { regex: "/KS-2.jpg/" }) {
-      resolutions(width: 200, height: 141) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageKS3: imageSharp(id: { regex: "/KS-3.jpg/" }) {
-      resolutions(width: 220, height: 163) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    # Chairs
-    imageCh1: imageSharp(id: { regex: "/Ch-1.png/" }) {
-      resolutions(width: 129, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageCh2: imageSharp(id: { regex: "/Ch-2.png/" }) {
-      resolutions(width: 183, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    # Stools
-    imageSt1: imageSharp(id: { regex: "/St-1.png/" }) {
-      resolutions(width: 109, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSt2: imageSharp(id: { regex: "/St-2.png/" }) {
-      resolutions(width: 138, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSt3: imageSharp(id: { regex: "/St-3.jpg/" }) {
-      resolutions(width: 220, height: 142) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSt4: imageSharp(id: { regex: "/St-4.jpg/" }) {
-      resolutions(width: 220, height: 156) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSt5: imageSharp(id: { regex: "/St-5.jpg/" }) {
-      resolutions(width: 190, height: 220) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    # Stands
-    imageSta1: imageSharp(id: { regex: "/Sta-1.jpg/" }) {
-      resolutions(width: 200, height: 142) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSta2: imageSharp(id: { regex: "/Sta-2.png/" }) {
-      resolutions(width: 172, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSta3: imageSharp(id: { regex: "/Sta-3.jpg/" }) {
-      resolutions(width: 169, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageSta4: imageSharp(id: { regex: "/Sta-4.jpg/" }) {
-      resolutions(width: 154, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    # Other
-    imageOt1: imageSharp(id: { regex: "/Ot-1.png/" }) {
-      resolutions(width: 130, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageOt2: imageSharp(id: { regex: "/Ot-2.png/" }) {
-      resolutions(width: 200, height: 133) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageOt3: imageSharp(id: { regex: "/Ot-3.png/" }) {
-      resolutions(width: 200, height: 133) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageOt4: imageSharp(id: { regex: "/Ot-4.png/" }) {
-      resolutions(width: 200, height: 121) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageOt5: imageSharp(id: { regex: "/Ot-5.jpg/" }) {
-      resolutions(width: 188, height: 200) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageOt6: imageSharp(id: { regex: "/Ot-6.jpg/" }) {
-      resolutions(width: 200, height: 194) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageOt7: imageSharp(id: { regex: "/Ot-7.jpg/" }) {
-      resolutions(width: 220, height: 153) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    # About
-    imageAb1: imageSharp(id: { regex: "/Ab-1.jpg/" }) {
-      resolutions(width: 200, height: 143) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageAb2: imageSharp(id: { regex: "/Ab-2.png/" }) {
-      resolutions(width: 200, height: 153) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageAb3: imageSharp(id: { regex: "/Ab-3.png/" }) {
-      resolutions(width: 200, height: 133) {
-        ...GatsbyImageSharpResolutions
-      }
-    }
-    imageAb4: imageSharp(id: { regex: "/Ab-4.jpg/" }) {
-      resolutions(width: 200, height: 113) {
+    imageMom: imageSharp(id: { regex: "/Mom.JPG/" }) {
+      resolutions(width: 198, height: 200) {
         ...GatsbyImageSharpResolutions
       }
     }
