@@ -3,9 +3,9 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styles from './Main.module.css'
 import Contact from './Contact'
+import Questionnaire from './Questionnaire'
 import Privacy from './Privacy'
 import Terms from './Terms'
-import { navigateTo } from 'gatsby-link'
 
 class Main extends React.Component {
   render() {
@@ -123,25 +123,18 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
+        <Questionnaire/>
           <Img
             className={styles.rightImg}
             resolutions={this.props.image1.resolutions}
           />
           <div>
-            <h3 className="major">Evaluation</h3>
-
-            <div className={styles.clear}>
-              <p>
-                <strong>Online Fillable Questionaire</strong>
-              </p>
-              <p>Also a thumbnail link to a printable version</p>
-            </div>
+            <p>Feel free to print it our and fill it, then come to our offices!</p>
+            <a href="/520.pdf" target="_blank"><Img
+                  className={styles.leftImg}
+                  resolutions={this.props.image1.resolutions}
+                /></a>
           </div>
-
-          <div onClick={() => window.print()}>
-            <Img resolutions={this.props.imagePO.resolutions} />
-          </div>
-
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}
@@ -158,29 +151,29 @@ class Main extends React.Component {
             <div className={styles.flexContainer}>
               {/*-- Flex Container --*/}
               <div className={styles.flexItems}>
-                <Img
+              <a href="/520.pdf" target="_blank"><Img
                   className={styles.leftImg}
                   resolutions={this.props.image1.resolutions}
-                />
+                /></a>
                 <div className={styles.clear}>
-                  <h4>HA-1560</h4>
+                  <h3>HA-1560</h3>
                   <ul>
                     <li>What it's for</li>
-                    <li>What esle it's for</li>
+                    <li>What else it's for</li>
                   </ul>
                 </div>
               </div>
               {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
-                <Img
+              <a href="/Ark 1.pdf" download><Img
                   className={styles.leftImg}
                   resolutions={this.props.image2.resolutions}
-                />
+                /></a>
                 <div className={styles.clear}>
                   <h4>HA-1561</h4>
                   <ul>
                     <li>What it's for</li>
-                    <li>What esle it's for</li>
+                    <li>What else it's for</li>
                   </ul>
                 </div>
               </div>
@@ -260,6 +253,28 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <Contact />
+          {close}
+        </article>
+        {/*---------------------------------------------------------------------------------------------------*/}
+        <article
+          id="Privacy"
+          className={`${this.props.article === 'Privacy' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <Privacy />
+          {close}
+        </article>
+        {/*---------------------------------------------------------------------------------------------------*/}
+        <article
+          id="Terms"
+          className={`${this.props.article === 'Terms' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <Terms />
           {close}
         </article>
         {/*---------------------------------------------------------------------------------------------------*/}

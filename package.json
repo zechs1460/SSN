@@ -1,5 +1,5 @@
 {
-  "name": "PerezyAltieri",
+  "name": "SSN",
   "description": "Website for the Law Offices of Perez y Altieri",
   "version": "1.0.0",
   "author": "Joseph Claudio",
@@ -35,6 +35,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
+    "d": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",

@@ -12,14 +12,19 @@ export default class Contact extends React.Component {
             Perez y Altieri Office
             <br />
             <br />
-            <span className="icon alt fa-phone">&nbsp;</span>
-            Tel: (XXX) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="icon alt fa-envelope">&nbsp;</span>
-            Email: atsuro4me@yahoo.com
-            <br />
-            <br />
             <span className="icon alt fa-home">&nbsp;</span>
             1324 Street Rd, City, SS ZIIPP
+            <br />
+            <span className="icon alt fa-phone">&nbsp;</span>
+            (XXX) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            {/*
+            Removing email for SPAM reasons
+             */}
+             <br />
+            <span className="icon alt fa-envelope">&nbsp;</span>
+            atsuro4me@yahoo.com
+            
           </strong>
         </p>
 

@@ -7,24 +7,9 @@ export default class Contact extends React.Component {
     return (
       <div>
         <h3 className="major">Web Form</h3> 
-        <p>
-          <strong>
-            Perez y Altieri Office
-            <br />
-            <br />
-            <span className="icon alt fa-phone">&nbsp;</span>
-            Tel: (XXX) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="icon alt fa-envelope">&nbsp;</span>
-            Email: atsuro4me@yahoo.com
-            <br />
-            <br />
-            <span className="icon alt fa-home">&nbsp;</span>
-            1324 Street Rd, City, SS ZIIPP
-          </strong>
-        </p>
-
+        <p>Once you submit this form, we will contact you as soon as possible to let you know you're eligibility <strong>free of charge</strong>.</p>
         <form
-          name="contact"
+          name="questionnaire"
           method="post"
           action="/ThankYou"
           data-netlify="true"
@@ -56,25 +41,6 @@ export default class Contact extends React.Component {
             </li>
           </ul>
         </form>
-
-        <ul className="icons">
-          <li>
-            <a
-              href="https://www.facebook.com/"
-              className="icon fa-facebook"
-            >
-              <span className="label">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/zechs1460/SSN"
-              className="icon fa-github"
-            >
-              <span className="label">GitHub</span>
-            </a>
-          </li>
-        </ul>
       </div>
     )
   }

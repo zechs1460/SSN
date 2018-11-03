@@ -21,7 +21,7 @@ class IndexPage extends React.Component {
         <p>
           <strong>Thank you for contacting us. </strong>
         </p>
-        <p>We will soon reply to your message/comment.</p>
+        <p>We will soon reply to your submission.</p>
         <p>
           We can always be reached at XXXX if you need assistance
           immediatly.
