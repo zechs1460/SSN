@@ -129,7 +129,7 @@ class Main extends React.Component {
             resolutions={this.props.image1.resolutions}
           />
           <div>
-            <p>Feel free to print it our and fill it, then come to our offices!</p>
+            <p>Feel free to print it our and fill it, then call our office for an appointment.</p>
             <a href="/520.pdf" target="_blank"><Img
                   className={styles.leftImg}
                   resolutions={this.props.image1.resolutions}
