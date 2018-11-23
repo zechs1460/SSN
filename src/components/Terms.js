@@ -9,6 +9,19 @@ class Terms extends React.Component {
       <div>
         <h3 className="major">Terms of Use</h3>
         <p>
+          ssssaaaaaaaaYour access to and use of the Site, including any content,
+          functionality and services offered on or through the Site, is also
+          subject to the following terms of use (“Terms of Use”) and all
+          applicable laws. Please read the Terms of Use carefully before you
+          start to use the Site. By accessing and browsing the Site, you accept,
+          without limitation or qualification, and agree to be bound by these
+          Terms of Use and our Privacy Policy and acknowledge that any other
+          agreements between you and Perez y Altieri regarding this subject
+          matter are superseded by these Terms of Use. If you do not want to
+          agree to these Terms of Use or the Privacy Policy, you must not access
+          or use the Site.
+        </p>
+        <p>
           Your access to and use of the Site, including any content,
           functionality and services offered on or through the Site, is also
           subject to the following terms of use (“Terms of Use”) and all

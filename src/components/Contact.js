@@ -13,17 +13,21 @@ export default class Contact extends React.Component {
             <br />
             <br />
             <span className="icon alt fa-home">&nbsp;</span>
-            1324 Street Rd, City, SS ZIIPP
+            M-1 ....
+            IN ORLANDO
+            ...
             <br />
             <span className="icon alt fa-phone">&nbsp;</span>
-            (XXX) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
+            (787) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
+            IN ORLANDO ...
+            .....
             
             {/*
             Removing email for SPAM reasons
-             */}
              <br />
             <span className="icon alt fa-envelope">&nbsp;</span>
             atsuro4me@yahoo.com
+            */}
             
           </strong>
         </p>
@@ -49,8 +53,9 @@ export default class Contact extends React.Component {
             <input type="text" name="email" id="email" />
           </div>
           <div className="field">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Message (Tell us about you)</label>
             <textarea name="message" id="message" rows="4" />
+            Age, reinforce NOT to give ur SSN number to anyone!
           </div>
           <ul className="actions">
             <li>

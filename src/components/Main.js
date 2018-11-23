@@ -123,17 +123,23 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-        <Questionnaire/>
-          <Img
-            className={styles.rightImg}
-            resolutions={this.props.image1.resolutions}
-          />
+          <Questionnaire />
+
           <div>
-            <p>Feel free to print our form, fill it, then contact us for an appointment.</p>
-            <a href="/520.pdf" target="_blank"><Img
-                  className={styles.leftImg}
-                  resolutions={this.props.image1.resolutions}
-                /></a>
+            <p>
+              You can also print the form (click image below), fill it, then
+              contact us for an appointment.
+            </p>
+            <a href="/520.pdf" target="_blank">
+              <Img
+                className={styles.leftImg}
+                resolutions={this.props.image1.resolutions}
+              />
+            </a>
+            <Img
+              className={styles.rightImg}
+              resolutions={this.props.image1.resolutions}
+            />
           </div>
           {close}
         </article>
@@ -146,15 +152,17 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <div>
-            <h3 className="major">Legal Forms</h3>
+            <h3 className="major">Forms</h3>
 
             <div className={styles.flexContainer}>
               {/*-- Flex Container --*/}
               <div className={styles.flexItems}>
-              <a href="/520.pdf" target="_blank"><Img
-                  className={styles.leftImg}
-                  resolutions={this.props.image1.resolutions}
-                /></a>
+                <a href="/520.pdf" target="_blank">
+                  <Img
+                    className={styles.leftImg}
+                    resolutions={this.props.image1.resolutions}
+                  />
+                </a>
                 <div className={styles.clear}>
                   <h3>HA-1560</h3>
                   <ul>
@@ -165,15 +173,45 @@ class Main extends React.Component {
               </div>
               {/*-- Flex Item --*/}
               <div className={styles.flexItems}>
-              <a href="/Ark 1.pdf" download><Img
-                  className={styles.leftImg}
-                  resolutions={this.props.image2.resolutions}
-                /></a>
+                <a href="/Ark 1.pdf" download>
+                  <Img
+                    className={styles.leftImg}
+                    resolutions={this.props.image2.resolutions}
+                  />
+                </a>
                 <div className={styles.clear}>
                   <h4>HA-1561</h4>
                   <ul>
                     <li>What it's for</li>
                     <li>What else it's for</li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.flexItems}>
+                <a href="/Ark 1.pdf" download>
+                  <Img
+                    className={styles.leftImg}
+                    resolutions={this.props.image2.resolutions}
+                  />
+                </a>
+                <div className={styles.clear}>
+                  <h4>SS5</h4>
+                  <ul>
+                    <li>To request a SS card</li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.flexItems}>
+                <a href="/Ark 1.pdf" download>
+                  <Img
+                    className={styles.leftImg}
+                    resolutions={this.props.image2.resolutions}
+                  />
+                </a>
+                <div className={styles.clear}>
+                  <h4>?-561</h4>
+                  <ul>
+                    <li>Request consideration</li>
                   </ul>
                 </div>
               </div>
