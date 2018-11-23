@@ -1709,7 +1709,7 @@ export default class Contact extends React.Component {
           
           <ul className="actions">
             <li>
-              <input type="submit" value="Send Message" className="special" />
+              <input type="submit" className="special" />
             </li>
             <li>
               <input type="reset" value="Reset" className="special" />
