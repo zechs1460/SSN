@@ -6,34 +6,36 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h3 className="major">Contact</h3>
+        <h3 className="major">Contact Us</h3> 
         <p>
           <strong>
-            Claudio Dental Lab
+            Perez y Altieri Office
             <br />
+            <br />
+            <span className="icon alt fa-home">&nbsp;</span>
+            M-1 ....
+            IN ORLANDO
+            ...
             <br />
             <span className="icon alt fa-phone">&nbsp;</span>
-            Tel: (912) 654-1001 &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="icon alt fa-print">&nbsp;</span>
-            Fax: (912) 654-1011
-            <br />
-            <br />
-            {/* 
-            Removing Email cuz too much Spam
+            (787) XXX-XXXX &nbsp;&nbsp;&nbsp;&nbsp;
+            IN ORLANDO ...
+            .....
+            
+            {/*
+            Removing email for SPAM reasons
+             <br />
             <span className="icon alt fa-envelope">&nbsp;</span>
-            Email: contact@claudiodentallab.com
-            <br />
-            <br />
+            atsuro4me@yahoo.com
             */}
-            <span className="icon alt fa-home">&nbsp;</span>
-            13918 GA Hwy-169, Glennville, GA 30427
+            
           </strong>
         </p>
 
         <form
-          name="contact"
-          method="post"
-          action="/ThankYou"
+          name="Contact"
+          method="POST"
+          action="/."
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
@@ -51,8 +53,9 @@ export default class Contact extends React.Component {
             <input type="text" name="email" id="email" />
           </div>
           <div className="field">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Message (Tell us about you)</label>
             <textarea name="message" id="message" rows="4" />
+            Age, reinforce NOT to give ur SSN number to anyone!
           </div>
           <ul className="actions">
             <li>
@@ -66,26 +69,16 @@ export default class Contact extends React.Component {
 
         <ul className="icons">
           <li>
-            <a href="#" className="icon fa-twitter">
-              <span className="label">Twitter</span>
-            </a>
-          </li>
-          <li>
             <a
-              href="https://www.facebook.com/pages/Claudio-Dental-Laboratory/508003735999660"
+              href="https://www.facebook.com/"
               className="icon fa-facebook"
             >
               <span className="label">Facebook</span>
             </a>
           </li>
           <li>
-            <a href="#" className="icon fa-instagram">
-              <span className="label">Instagram</span>
-            </a>
-          </li>
-          <li>
             <a
-              href="https://github.com/zechs1460/ClaudioDentalLab"
+              href="https://github.com/zechs1460/SSN"
               className="icon fa-github"
             >
               <span className="label">GitHub</span>
