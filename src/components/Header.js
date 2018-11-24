@@ -25,7 +25,7 @@ const Header = props => (
             Web Form
           </a>
         </li>
-        <li>
+        {/*<li>
           <a
             href="javascript:;"
             onClick={() => {
@@ -35,7 +35,7 @@ const Header = props => (
             Legal Forms
           </a>
         </li>
- 
+          */}
       </ul>
     </nav>
     <div className="content">

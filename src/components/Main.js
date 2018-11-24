@@ -22,7 +22,7 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        {/*--------------------------------------------------------------------------------------------------*/}
+        {/*---Start-----------------------------------------------------------------------------------------------*/}
         <article
           id="Start"
           className={`${this.props.article === 'Start' ? 'active' : ''} ${
@@ -115,7 +115,7 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
-        {/*--------------------------------------------------------------------------------------------------*/}
+        {/*----Evaluation----------------------------------------------------------------------------------------------*/}
         <article
           id="Evaluation"
           className={`${this.props.article === 'Evaluation' ? 'active' : ''} ${
@@ -143,86 +143,85 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
-        {/*---------------------------------------------------------------------------------------------------*/}
-        <article
-          id="Forms"
-          className={`${this.props.article === 'Forms' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <div>
-            <h3 className="major">Forms</h3>
-
-            <div className={styles.flexContainer}>
-              {/*-- Flex Container --*/}
-              <div className={styles.flexItems}>
-                <a href="/520.pdf" target="_blank">
-                  <Img
-                    className={styles.leftImg}
-                    resolutions={this.props.image1.resolutions}
-                  />
-                </a>
-                <div className={styles.clear}>
-                  <h3>HA-1560</h3>
-                  <ul>
-                    <li>What it's for</li>
-                    <li>What else it's for</li>
-                  </ul>
-                </div>
-              </div>
-              {/*-- Flex Item --*/}
-              <div className={styles.flexItems}>
-                <a href="/Ark 1.pdf" download>
-                  <Img
-                    className={styles.leftImg}
-                    resolutions={this.props.image2.resolutions}
-                  />
-                </a>
-                <div className={styles.clear}>
-                  <h4>HA-1561</h4>
-                  <ul>
-                    <li>What it's for</li>
-                    <li>What else it's for</li>
-                  </ul>
-                </div>
-              </div>
-              <div className={styles.flexItems}>
-                <a href="/Ark 1.pdf" download>
-                  <Img
-                    className={styles.leftImg}
-                    resolutions={this.props.image2.resolutions}
-                  />
-                </a>
-                <div className={styles.clear}>
-                  <h4>SS5</h4>
-                  <ul>
-                    <li>To request a SS card</li>
-                  </ul>
-                </div>
-              </div>
-              <div className={styles.flexItems}>
-                <a href="/Ark 1.pdf" download>
-                  <Img
-                    className={styles.leftImg}
-                    resolutions={this.props.image2.resolutions}
-                  />
-                </a>
-                <div className={styles.clear}>
-                  <h4>?-561</h4>
-                  <ul>
-                    <li>Request consideration</li>
-                  </ul>
-                </div>
-              </div>
-              {/*-- Flex Item --*/}
-            </div>
-            {/*-- Flex Container --*/}
-          </div>
-          {/*-- Article --*/}
-          {close}
-        </article>
-        {/*---------------------------------------------------------------------------------------------------*/}
+        {/*---Forms------------------------------------------------------------------------------------------------*/}
+{/*--        <article																  --*/}
+{/*--          id="Forms"                                                             --*/}
+{/*--          className={`${this.props.article === 'Forms' ? 'active' : ''} ${       --*/}
+{/*--            this.props.articleTimeout ? 'timeout' : ''                           --*/}
+{/*--          }`}                                                                    --*/}
+{/*--          style={{ display: 'none' }}                                            --*/}
+{/*--        >                                                                        --*/}
+{/*--          <div>                                                                  --*/}
+{/*--            <h3 className="major">Forms</h3>                                     --*/}
+{/*--                                                                                 --*/}
+{/*--            <div className={styles.flexContainer}>                               --*/}
+{/*--              {/*-- Flex Container --*/}                                         
+{/*--              <div className={styles.flexItems}>                                 --*/}
+{/*--                <a href="/520.pdf" target="_blank">                              --*/}
+{/*--                  <Img                                                           --*/}
+{/*--                    className={styles.leftImg}                                   --*/}
+{/*--                    resolutions={this.props.image1.resolutions}                  --*/}
+{/*--                  />                                                             --*/}
+{/*--                </a>                                                             --*/}
+{/*--                <div className={styles.clear}>                                   --*/}
+{/*--                  <h3>HA-1560</h3>                                               --*/}
+{/*--                  <ul>                                                           --*/}
+{/*--                    <li>What it's for</li>                                       --*/}
+{/*--                    <li>What else it's for</li>                                  --*/}
+{/*--                  </ul>                                                          --*/}
+{/*--                </div>                                                           --*/}
+{/*--              </div>                                                             --*/}
+{/*--              {/*-- Flex Item --*/}                                              
+{/*--              <div className={styles.flexItems}>                                 --*/}
+{/*--                <a href="/Ark 1.pdf" download>                                   --*/}
+{/*--                  <Img                                                           --*/}
+{/*--                    className={styles.leftImg}                                   --*/}
+{/*--                    resolutions={this.props.image2.resolutions}                  --*/}
+{/*--                  />                                                             --*/}
+{/*--                </a>                                                             --*/}
+{/*--                <div className={styles.clear}>                                   --*/}
+{/*--                  <h4>HA-1561</h4>                                               --*/}
+{/*--                  <ul>                                                           --*/}
+{/*--                    <li>What it's for</li>                                       --*/}
+{/*--                    <li>What else it's for</li>                                  --*/}
+{/*--                  </ul>                                                          --*/}
+{/*--                </div>                                                           --*/}
+{/*--              </div>                                                             --*/}
+{/*--              <div className={styles.flexItems}>                                 --*/}
+{/*--                <a href="/Ark 1.pdf" download>                                   --*/}
+{/*--                  <Img                                                           --*/}
+{/*--                    className={styles.leftImg}                                   --*/}
+{/*--                    resolutions={this.props.image2.resolutions}                  --*/}
+{/*--                  />                                                             --*/}
+{/*--                </a>                                                             --*/}
+{/*--                <div className={styles.clear}>                                   --*/}
+{/*--                  <h4>SS5</h4>                                                   --*/}
+{/*--                  <ul>                                                           --*/}
+{/*--                    <li>To request a SS card</li>                                --*/}
+{/*--                  </ul>                                                          --*/}
+{/*--                </div>                                                           --*/}
+{/*--              </div>                                                             --*/}
+{/*--              <div className={styles.flexItems}>                                 --*/}
+{/*--                <a href="/Ark 1.pdf" download>                                   --*/}
+{/*--                  <Img                                                           --*/}
+{/*--                    className={styles.leftImg}                                   --*/}
+{/*--                    resolutions={this.props.image2.resolutions}                  --*/}
+{/*--                  />                                                             --*/}
+{/*--                </a>                                                             --*/}
+{/*--                <div className={styles.clear}>                                   --*/}
+{/*--                  <h4>?-561</h4>                                                 --*/}
+{/*--                  <ul>                                                           --*/}
+{/*--                    <li>Request consideration</li>                               --*/}
+{/*--                  </ul>                                                          --*/}
+{/*--                </div>                                                           --*/}
+{/*--              </div>                                                             --*/}
+{/*--              {/*-- Flex Item --*/}                                              
+{/*--            </div>                                                               --*/}
+{/*--            {/*-- Flex Container --*/}                                           
+{/*--          </div>                                                                 --*/}
+{/*--          {/*-- Article --*/}                                                    
+{/*--          {close}                                                                --*/}
+{/*--        </article>                                                               --*/}
         <article
           id="About"
           className={`${this.props.article === 'About' ? 'active' : ''} ${
@@ -282,7 +281,7 @@ class Main extends React.Component {
           {/*-- Article --*/}
           {close}
         </article>
-        {/*---------------------------------------------------------------------------------------------------*/}
+        {/*---Contact------------------------------------------------------------------------------------------------*/}
         <article
           id="Contact"
           className={`${this.props.article === 'Contact' ? 'active' : ''} ${
@@ -293,7 +292,7 @@ class Main extends React.Component {
           <Contact />
           {close}
         </article>
-        {/*---------------------------------------------------------------------------------------------------*/}
+        {/*---Privacy------------------------------------------------------------------------------------------------*/}
         <article
           id="Privacy"
           className={`${this.props.article === 'Privacy' ? 'active' : ''} ${
@@ -304,7 +303,7 @@ class Main extends React.Component {
           <Privacy />
           {close}
         </article>
-        {/*---------------------------------------------------------------------------------------------------*/}
+        {/*---Terms------------------------------------------------------------------------------------------------*/}
         <article
           id="Terms"
           className={`${this.props.article === 'Terms' ? 'active' : ''} ${
