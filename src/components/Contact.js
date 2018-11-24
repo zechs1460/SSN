@@ -33,10 +33,10 @@ export default class Contact extends React.Component {
         </p>
 
         <form
-          name="contact"
-          method="post"
+          name="Contact"
+          method="POST"
           action="/ThankYou"
-          data-netlify="true"
+          netlify
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="bot-field" />

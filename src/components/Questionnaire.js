@@ -13,8 +13,8 @@ export default class Contact extends React.Component {
           <strong>free of charge</strong>.
         </p>
         <form
-          name="questionnaire"
-          method="post"
+          name="Questionnaire"
+          method="POST"
           action="/ThankYou"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -37,6 +37,7 @@ export default class Contact extends React.Component {
           <input id="radioMCShow1" className="rad" name="HC1" type="radio" />
           <fieldset className="set">
             <legend>
+              <br/> {/*-- needed for some reason, overlaps above if not there --*/}
               {/*-- Personal --*/}
               <h4>Personal Information</h4>
               <div>
