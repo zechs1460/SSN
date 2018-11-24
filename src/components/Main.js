@@ -6,6 +6,7 @@ import Contact from './Contact'
 import Questionnaire from './Questionnaire'
 import Privacy from './Privacy'
 import Terms from './Terms'
+import { navigateTo } from 'gatsby-link'
 
 class Main extends React.Component {
   render() {
