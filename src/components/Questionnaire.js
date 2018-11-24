@@ -1706,10 +1706,10 @@ export default class Contact extends React.Component {
               </legend>
             </fieldset>
           </div>
-          
+          {/*-- End --*/}
           <ul className="actions">
             <li>
-              <input type="submit" className="special" />
+              <input type="submit" value="Send Message" className="special" />
             </li>
             <li>
               <input type="reset" value="Reset" className="special" />

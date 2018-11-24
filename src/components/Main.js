@@ -270,7 +270,15 @@ class Main extends React.Component {
             </div>
           </div>
 
-
+          <div>
+            <Img
+              className={styles.rightImg}
+              resolutions={this.props.imageMom.resolutions}
+            />
+            <div className={styles.clear}>
+              <p>Momma is taking over!</p>
+            </div>
+          </div>
           {/*-- Article --*/}
           {close}
         </article>
