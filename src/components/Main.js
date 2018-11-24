@@ -23,7 +23,7 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        {/*---Start-----------------------------------------------------------------------------------------------*/}
+        {/*---Start----------------------------------------------------------------------------------------------*/}
         <article
           id="Start"
           className={`${this.props.article === 'Start' ? 'active' : ''} ${
